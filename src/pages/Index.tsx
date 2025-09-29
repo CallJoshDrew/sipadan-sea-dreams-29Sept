@@ -13,7 +13,7 @@ import FacilitiesSection from "@/components/sections/FacilitiesSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 
 const Index = () => {
-  const { isPlaying, toggle, play } = useAudio('/sounds/ocean-ambient.mp3');
+  const { isPlaying, toggle, play } = useAudio('/sounds/ocean-wavesV1.mp3');
   
   useEffect(() => {
     const handlePlayAudio = () => {
