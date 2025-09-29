@@ -99,32 +99,25 @@ const FacilitiesSection = () => {
           </p>
         </div>
         
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-11/12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {facilities.map((facility, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-card rounded-2xl p-8 elegant-shadow smooth-transition hover:ocean-shadow hover:scale-105 cursor-pointer"
               onClick={() => {
                 console.log("Facility clicked:", facility.title);
                 setSelectedFacility(facility.title);
-              }}
-            >
+              }}>
               <div className="flex items-center mb-6">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full ocean-gradient mr-4">
                   <facility.icon className="w-6 h-6 text-white" />
                 </div>
-                <div className="inline-block bg-ocean-light/20 text-ocean-primary px-3 py-1 rounded-full text-sm font-medium">
-                  {facility.highlight}
-                </div>
+                <div className="inline-block bg-ocean-light/20 text-ocean-primary px-3 py-1 rounded-full text-sm font-medium">{facility.highlight}</div>
               </div>
-              
-              <h3 className="text-2xl font-bold text-ocean-deep mb-4">
-                {facility.title}
-              </h3>
+
+              <h3 className="text-2xl font-bold text-ocean-deep mb-4">{facility.title}</h3>
             </div>
           ))}
-          </div>
         </div>
         
         {/* Call to Action */}
