@@ -43,7 +43,7 @@ const AwardsSection = () => {
           {awards.map((award, index) => (
             <div
               key={index}
-              className={`bg-white rounded-2xl p-8 flex items-center elegant-shadow smooth-transition hover:scale-105 hover:glow-effect transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+              className={`group bg-white rounded-2xl p-8 flex items-center elegant-shadow smooth-transition hover:scale-105 hover:glow-effect transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
               style={{
                 transitionDelay: isVisible ? `${index * 0.2}s` : "0s",
               }}>
@@ -51,10 +51,10 @@ const AwardsSection = () => {
               <img
                 src={award.image}
                 alt={`${award.title} award`}
-                className={`rounded-2xl object-contain mr-8 flex-shrink-0`}
+                className={`rounded-2xl object-contain mr-8 flex-shrink-0 transition-transform duration-300 group-hover:scale-110`}
                 style={{
-                  width: index === 0 ? "7rem" : "6rem", // w-28 = 7rem, w-24 = 6rem
-                  height: index === 0 ? "8.5rem" : "7rem", // h-34 = 8.5rem, h-28 = 7rem
+                  width: index === 0 || index === 2 ? "7rem" : "6rem",
+                  height: index === 0 || index === 2 ? "9rem" : "7rem",
                 }}
               />
 

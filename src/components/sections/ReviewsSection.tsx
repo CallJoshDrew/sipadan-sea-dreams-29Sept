@@ -108,7 +108,7 @@ const ReviewsSection = () => {
               </div>
               <div className="text-center lg:text-left">
                 <p className="text-xl text-ocean-deep mb-8 leading-relaxed">
-                  With a perfect <span className="font-bold">5.0-star rating</span> from over <span className="font-bold">2,500 happy guests</span> 
+                  With a perfect <span className="font-bold">5.0-star rating</span> from over <span className="font-bold">2,500 happy guests </span> 
                   and an impressive <span className="font-bold">98% return rate</span>, our commitment to excellence speaks for itself.
                   Join the thousands of satisfied travelers who have discovered their perfect paradise getaway.
                 </p>

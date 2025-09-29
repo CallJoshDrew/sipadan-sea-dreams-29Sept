@@ -23,7 +23,7 @@ const HeroSection = () => {
     const audioEvent = new CustomEvent('playAudio');
     window.dispatchEvent(audioEvent);
     
-    const element = document.getElementById('diving');
+    const element = document.getElementById('awards');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }

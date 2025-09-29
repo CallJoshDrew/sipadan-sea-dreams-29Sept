@@ -12,7 +12,7 @@ const Footer = () => {
             </h3>
             <p className="text-gray-300 leading-relaxed">
               Experience the ultimate underwater paradise in the heart of the Coral Triangle. 
-              Over 30 years of excellence in marine adventures.
+              Over 30 years of service in marine adventures.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-ocean-pearl hover:text-white smooth-transition">
@@ -40,11 +40,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-ocean-primary" />
-                <p className="text-gray-300">+60 89-781-200</p>
+                <p className="text-gray-300">+6089-673999</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-ocean-primary" />
-                <p className="text-gray-300">info@sipadankapalai.com</p>
+                <p className="text-gray-300">mail@sipadan-kapalai.com</p>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Sipadan Kapalai Dive Resort. All rights reserved.
+              © 2025 Sipadan Kapalai Dive Resort. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-ocean-pearl text-sm smooth-transition">

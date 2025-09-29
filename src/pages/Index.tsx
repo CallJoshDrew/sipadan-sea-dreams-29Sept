@@ -30,7 +30,9 @@ const Index = () => {
       <section id="home">
         <HeroSection />
       </section>
+      <section id="awards">
       <AwardsSection />
+      </section>
       <section id="diving">
         <DiveExpertSection />
       </section>
