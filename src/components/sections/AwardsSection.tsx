@@ -35,7 +35,7 @@ const AwardsSection = () => {
     <section className="py-20 bg-gradient-to-br from-ocean-pearl to-background">
       <div className="container mx-auto px-4" ref={ref}>
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-4">30 Years of Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-4">30 Years of Service</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Three decades of prestigious recognition and unwavering commitment to marine conservation and impeccable service.</p>
         </div>
 

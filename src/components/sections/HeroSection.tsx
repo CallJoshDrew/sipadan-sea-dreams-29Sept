@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin } from "lucide-react";
 import { useTypewriter } from "@/hooks/useTypewriter";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import heroImage from "@/assets/hero-overwater-villas.jpg";
+import heroImage from "@/assets/scenery/pic8.jpg";
 import greenFinsAward from "@/assets/green-fins-award.jpg";
 import padiAward from "@/assets/padi-5-star-award.png";
 import ecoFriendlyAward from "@/assets/best-eco-friendly-award.png";
