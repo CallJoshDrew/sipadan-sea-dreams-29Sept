@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import memorableHolidaysIntro from "@/assets/memorable-holidays-intro.jpg";
-import familyBeachImage from "@/assets/family-beach-moments.jpg";
+import couplesImage from "@/assets/scenery/RYC_6506.jpg";
 import expertCouplesDivingImage from "@/assets/expert-couples-diving.jpg";
 import beachRelaxImage from "@/assets/beach-relaxation.jpg";
 import beachImage from "@/assets/beach-conversation.jpg";
@@ -16,7 +16,7 @@ const HolidaysSection = () => {
   
   const slides = [
     {
-      image: familyBeachImage,
+      image: couplesImage,
       caption: "Creating precious family memories on pristine beaches"
     },
     {

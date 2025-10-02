@@ -3,7 +3,7 @@ import { Waves } from "lucide-react";
 import ActivityGallery from "@/components/ActivityGallery";
 import underwaterImage from "@/assets/underwater-diving.jpg";
 import kayakingImage from "@/assets/kayaking-activity.jpg";
-import snorkelingImage from "@/assets/snorkeling-activity.jpg";
+import snorkelingImage from "@/assets/activities/snorkeling.jpg";
 import cyclingImage from "@/assets/cycling-activity.jpg";
 import natureImage from "@/assets/nature-observation.jpg";
 
