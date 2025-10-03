@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import memorableHolidaysIntro from "@/assets/memorable-holidays-intro.jpg";
-import couplesImage from "@/assets/scenery/RYC_6506.jpg";
+import couplesImage from "@/assets/activities/nature4.jpg";
 import expertCouplesDivingImage from "@/assets/expert-couples-diving.jpg";
 import beachRelaxImage from "@/assets/beach-relaxation.jpg";
 import beachImage from "@/assets/beach-conversation.jpg";
@@ -17,7 +17,7 @@ const HolidaysSection = () => {
   const slides = [
     {
       image: couplesImage,
-      caption: "Creating precious family memories on pristine beaches"
+      caption: "Creating precious memories on pristine beaches"
     },
     {
       image: expertCouplesDivingImage,
@@ -114,11 +114,11 @@ const HolidaysSection = () => {
                          alt={`Holiday moment ${index + 1}`}
                          className="w-full h-full object-cover"
                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" /> */}
                         
                           {/* Regular slides with captions */}
                           <div className="absolute bottom-20 left-0 right-0 p-8">
-                            <p className="text-white text-xl md:text-2xl font-medium text-center">
+                            <p className="text-white text-xl md:text-2xl font-medium text-center" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}>
                               {slide.caption}
                             </p>
                           </div>
@@ -177,11 +177,11 @@ const HolidaysSection = () => {
                          alt={`Holiday moment ${index + 1}`}
                          className="w-full h-full object-cover"
                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" /> */}
                         
                           {/* Regular slides with captions */}
                           <div className="absolute bottom-20 left-0 right-0 p-6">
-                            <p className="text-white text-lg font-medium text-center">
+                            <p className="text-white text-lg font-medium text-center" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}>
                               {slide.caption}
                             </p>
                           </div>

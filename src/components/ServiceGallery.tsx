@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 // Service images
-import airportPickup from "@/assets/service-galleries/seamless-journeys/airport-pickup.jpg";
-import jettyArrival from "@/assets/service-galleries/seamless-journeys/jetty-arrival.jpg";
-import speedboatResort from "@/assets/service-galleries/seamless-journeys/speedboat-resort.jpg";
+import airportPickup from "@/assets/service-galleries/seamless-journeys/airport-pickup.png";
+import jettyArrival from "@/assets/service-galleries/seamless-journeys/arrival.jpg";
+import speedboatResort from "@/assets/service-galleries/seamless-journeys/kapalaiArrival.jpg";
 
-import romanticDinner from "@/assets/service-galleries/tailored-experiences/romantic-dinner.jpg";
-import birthdayCelebration from "@/assets/service-galleries/tailored-experiences/birthday-celebration.jpg";
-import anniversaryCelebration from "@/assets/service-galleries/tailored-experiences/anniversary-celebration.jpg";
+import romanticDinner from "@/assets/service-galleries/tailored-experiences/romanticDinner.png";
+import birthdayCelebration from "@/assets/service-galleries/tailored-experiences/birthdayCelebration.png";
+import honeyMoon from "@/assets/service-galleries/tailored-experiences/honeyMoon.jpg";
 
 import firstAidKit from "@/assets/service-galleries/medical-assistance/first-aid-kit.jpg";
 import woundTreatment from "@/assets/service-galleries/medical-assistance/wound-treatment.jpg";
@@ -17,13 +17,13 @@ import asthmaAssistance from "@/assets/service-galleries/medical-assistance/asth
 const serviceGalleries = {
   "Seamless Journeys": [
     { src: airportPickup, alt: "Professional airport pickup service for resort guests", title: "Airport Pickup" },
-    { src: jettyArrival, alt: "Guests arriving at resort jetty with welcome drinks", title: "Jetty Arrival" },
+    { src: jettyArrival, alt: "Guests arriving at resort with welcome drinks", title: "Resort Arrival" },
     { src: speedboatResort, alt: "Luxury speedboat transfer to tropical resort", title: "Speedboat to Resort" }
   ],
   "Tailored Experiences": [
     { src: romanticDinner, alt: "Romantic candlelit dinner on the beach at sunset", title: "Romantic Dinner" },
     { src: birthdayCelebration, alt: "Special birthday celebration at tropical resort", title: "Birthday Celebration" },
-    { src: anniversaryCelebration, alt: "10th anniversary celebration with champagne toast", title: "Anniversary Celebration" }
+    { src: honeyMoon, alt: "A honeymoon bed decorated with towel swans and flowers", title: "Honeymoon" }
   ],
   "Medical Assistance": [
     { src: firstAidKit, alt: "Professional first aid kit with medical supplies", title: "First Aid Kit" },
@@ -82,7 +82,7 @@ const ServiceGallery = ({ service, isOpen, onClose }: ServiceGalleryProps) => {
             <img
               src={images[currentImageIndex].src}
               alt={images[currentImageIndex].alt}
-              className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-2xl"
+              className="w-full h-full md:h-[600px] object-cover rounded-lg shadow-2xl"
             />
             
             {/* Image title */}
@@ -99,7 +99,7 @@ const ServiceGallery = ({ service, isOpen, onClose }: ServiceGalleryProps) => {
               <button
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
-                className={`flex-shrink-0 w-16 h-12 sm:w-20 sm:h-16 md:w-24 md:h-20 rounded-lg overflow-hidden border-2 smooth-transition ${
+                className={`flex-shrink-0 w-16 h-12 sm:w-20 sm:h-16 md:w-24 md:h-20 rounded-sm overflow-hidden border-2 smooth-transition ${
                   index === currentImageIndex 
                     ? 'border-ocean-light' 
                     : 'border-white/30 hover:border-white/60'

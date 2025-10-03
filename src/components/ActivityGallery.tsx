@@ -2,17 +2,17 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 // Diving images
-import divingCoralReef from "@/assets/activity-galleries/diving/diving-coral-reef.jpg";
+import divingCoralReef from "@/assets/activities/diving.jpg";
 // import coupleDivingAdventure from "@/assets/activity-galleries/diving/couple-diving-adventure.jpg";
 // import caveDivingExploration from "@/assets/activity-galleries/diving/cave-diving-exploration.jpg";
-import divingInstruction from "@/assets/activity-galleries/diving/diving-instruction.jpg";
-import marineLifeCloseup from "@/assets/expert-couples-diving.jpg";
+import divingInstruction from "@/assets/activities/diving1.jpg";
+import marineLifeCloseup from "@/assets/activities/diving2.jpg";
 
 // Kayaking images
-import peacefulLagoonKayaking from "@/assets/activity-galleries/kayaking/peaceful-lagoon-kayaking.jpg";
-import sunsetCoupleKayaking from "@/assets/activity-galleries/kayaking/sunset-couple-kayaking.jpg";
+import peacefulLagoonKayaking from "@/assets/activities/kayaking.jpg";
+import sunsetCoupleKayaking from "@/assets/activities/kayaking2.jpg";
 // import mangroveKayakAdventure from "@/assets/activity-galleries/kayaking/mangrove-kayak-adventure.jpg";
-import soloTurquoiseKayaking from "@/assets/activity-galleries/kayaking/solo-turquoise-kayaking.jpg";
+import soloTurquoiseKayaking from "@/assets/activities/kayaking3.jpg";
 // import groupMountainKayaking from "@/assets/activity-galleries/kayaking/group-mountain-kayaking.jpg";
 
 // Snorkeling images
@@ -30,23 +30,23 @@ import villageCulturalCycling from "@/assets/activity-galleries/cycling/village-
 import sunsetCyclingAdventure from "@/assets/activity-galleries/cycling/sunset-cycling-adventure.jpg";
 
 // Nature images
-import spectacularOceanSunset from "@/assets/activity-galleries/nature/spectacular-ocean-sunset.jpg";
-import tropicalSunriseBeach from "@/assets/activity-galleries/nature/tropical-sunrise-beach.jpg";
+import spectacularOceanSunset from "@/assets/activities/nature.jpg";
+import tropicalSunriseBeach from "@/assets/activities/nature5.jpg";
 // import coupleBeachRelaxation from "@/assets/activity-galleries/nature/couple-beach-relaxation.jpg";
 // import beachConversationFriends from "@/assets/activity-galleries/nature/beach-conversation-friends.jpg";
-import peacefulHammockRelaxation from "@/assets/activity-galleries/nature/peaceful-hammock-relaxation.jpg";
+import peacefulHammockRelaxation from "@/assets/activities/nature3.jpg";
 
 const activityGalleries = {
   "Diving": [
-    { src: divingCoralReef, alt: "Professional scuba divers exploring vibrant coral reef", title: "Coral Reef Exploration" },
+    { src: divingCoralReef, alt: "Professional scuba divers giving training", title: "Guidance" },
     // { src: coupleDivingAdventure, alt: "Couple diving together underwater", title: "Romantic Diving Adventure" },
     // { src: caveDivingExploration, alt: "Underwater cave diving with dramatic lighting", title: "Cave Diving Exploration" },
     { src: divingInstruction, alt: "Professional diving instruction underwater", title: "Diving Lessons" },
     { src: marineLifeCloseup, alt: "Close-up of tropical fish and coral formations", title: "Marine Life Discovery" }
   ],
   "Kayaking": [
-    { src: peacefulLagoonKayaking, alt: "Peaceful kayaking in crystal clear lagoon", title: "Lagoon Kayaking" },
-    { src: sunsetCoupleKayaking, alt: "Couple kayaking at golden sunset", title: "Sunset Romance" },
+    { src: peacefulLagoonKayaking, alt: "Peaceful kayaking in crystal clear lagoon", title: "Kayaking" },
+    { src: sunsetCoupleKayaking, alt: "Solo kayaker in turquoise waters", title: "Solo Exploration" },
     // { src: mangroveKayakAdventure, alt: "Kayaking through mangrove channels", title: "Mangrove Adventure" },
     { src: soloTurquoiseKayaking, alt: "Solo kayaker in turquoise waters", title: "Solo Exploration" },
     // { src: groupMountainKayaking, alt: "Group kayaking with mountain backdrop", title: "Group Expedition" }
@@ -70,7 +70,7 @@ const activityGalleries = {
     { src: tropicalSunriseBeach, alt: "Beautiful sunrise from tropical beach", title: "Beach Sunrise" },
     // { src: coupleBeachRelaxation, alt: "Couple relaxing on white sand beach", title: "Beach Relaxation" },
     // { src: beachConversationFriends, alt: "Friends enjoying beach conversation", title: "Social Moments" },
-    { src: peacefulHammockRelaxation, alt: "Peaceful hammock between palm trees", title: "Hammock Paradise" }
+    { src: peacefulHammockRelaxation, alt: "Enjoy the beautiful sunset while relax", title: "Relaxation" }
   ]
 };
 
