@@ -9,8 +9,8 @@ import culinaryExcellenceImage from "@/assets/culinary-excellence.jpg";
 import medicalAssistanceImage from "@/assets/medical-assistance.jpg";
 import tailoredExperiencesImage from "@/assets/tailored-experiences.jpg";
 import gourmetDiningImage from "@/assets/gourmet-dining.jpg";
-import familyDiningImage from "@/assets/family-dining.jpg";
-import kidsFriendlyFoodImage from "@/assets/kids-friendly-food.jpg";
+import familyDiningImage from "@/assets/service-galleries/familyDinner.png";
+import kidsFriendlyFoodImage from "@/assets/service-galleries/kidsMeals.png";
 
 const FoodCarouselDots = ({ foodImages }) => {
   const { api } = useCarousel();

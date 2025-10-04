@@ -3,28 +3,29 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Import food gallery images
-import seafoodPlatter from "@/assets/food-gallery/seafood-platter.jpg";
-import smoothieBowl from "@/assets/food-gallery/smoothie-bowl.jpg";
-import pastaDish from "@/assets/food-gallery/pasta-dish.jpg";
-import luxuryDessert from "@/assets/food-gallery/luxury-dessert.jpg";
-import sushiPlatter from "@/assets/food-gallery/sushi-platter.jpg";
-import grilledSteak from "@/assets/food-gallery/grilled-steak.jpg";
-import veggieSalad from "@/assets/food-gallery/veggie-salad.jpg";
-import artisanPizza from "@/assets/food-gallery/artisan-pizza.jpg";
-import tropicalCocktails from "@/assets/food-gallery/tropical-cocktails.jpg";
-import localCuisine from "@/assets/food-gallery/local-cuisine.jpg";
+import asianDelights from "@/assets/food-gallery/AsianDelightsSampler.png";
+import chickenCheese from "@/assets/food-gallery/burger.png";
+import seafoodAlfredo from "@/assets/food-gallery/seafoodAlfredo.png";
+import spicyStirFryCrab from "@/assets/food-gallery/spicyStir-FryCrab.png";
+import glazedWings from "@/assets/food-gallery/crispyAsianGlazedWings.png";
+import grilledSataySkewers from "@/assets/food-gallery/grilledSataySkewers.png";
+import roastShank from "@/assets/food-gallery/bbqRoastShank.png";
+import greekSalad from "@/assets/food-gallery/greekSalad.png";
+import islandBites from "@/assets/food-gallery/sweetIslandBites.png";
+import fourSeasons from "@/assets/food-gallery/fourSeasonsDessertPlate.png";
 
 const foodImages = [
-  { src: seafoodPlatter, alt: "Gourmet Seafood Platter", title: "Fresh Seafood Selection" },
-  { src: smoothieBowl, alt: "Tropical Smoothie Bowl", title: "Healthy Breakfast Bowl" },
-  { src: pastaDish, alt: "Fine Dining Pasta", title: "Artisan Pasta Creation" },
-  { src: luxuryDessert, alt: "Luxury Dessert", title: "Decadent Sweet Treats" },
-  { src: sushiPlatter, alt: "Fresh Sushi Platter", title: "Japanese Sushi Art" },
-  { src: grilledSteak, alt: "Grilled Steak", title: "Premium Grilled Meats" },
-  { src: veggieSalad, alt: "Healthy Vegetarian Salad", title: "Garden Fresh Salads" },
-  { src: artisanPizza, alt: "Artisan Pizza", title: "Wood-Fired Pizza" },
-  { src: tropicalCocktails, alt: "Tropical Cocktails", title: "Signature Cocktails" },
-  { src: localCuisine, alt: "Local Traditional Cuisine", title: "Authentic Local Flavors" },
+  { src: asianDelights, alt: "Asian Delights Sampler", title: "Asian Delights Sampler" },
+  // { src: seafoodPlatter, alt: "Gourmet Seafood Platter", title: "Fresh Seafood Selection" },
+  { src: chickenCheese, alt: "Chicken Cheese Combo", title: "Chicken Cheese Combo" },
+  { src: seafoodAlfredo, alt: "Seafood Alfredo", title: "Seafood Alfredo" },
+  { src: spicyStirFryCrab, alt: "Spicy Stir-Fry Crab", title: "Spicy Stir-Fry Crab" },
+  { src: glazedWings, alt: "Crispy Asian Glazed Wings", title: "Crispy Asian Glazed Wings" },
+  { src: grilledSataySkewers, alt: "Grilled Satay Skewers with Spicy Rice Cakes", title: "Satay Skewers + Rice Cakes" },
+  { src: roastShank, alt: "BBQ Roast Shank", title: "BBQ Roast Shank" },
+  { src: greekSalad, alt: "Greek Salad", title: "Greek Salad" },
+  { src: islandBites, alt: "Sweet Island Bites", title: "Sweet Island Bites" },
+  { src: fourSeasons, alt: "Four Seasons Dessert Plate", title: "Four Seasons Dessert Plate" },
 ];
 
 interface FoodGalleryProps {
