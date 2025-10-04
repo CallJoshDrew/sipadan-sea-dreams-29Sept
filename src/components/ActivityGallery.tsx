@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 // Diving images
-import divingCoralReef from "@/assets/activities/diving.jpg";
+import divingCoralReef from "@/assets/activities/diving1.jpg";
 // import coupleDivingAdventure from "@/assets/activity-galleries/diving/couple-diving-adventure.jpg";
 // import caveDivingExploration from "@/assets/activity-galleries/diving/cave-diving-exploration.jpg";
-import divingInstruction from "@/assets/activities/diving1.jpg";
-import marineLifeCloseup from "@/assets/activities/diving2.jpg";
+import divingInstruction from "@/assets/activities/diving3.png";
+import marineLifeCloseup from "@/assets/activities/diving4.png";
 
 // Kayaking images
 import peacefulLagoonKayaking from "@/assets/activities/kayaking.jpg";
