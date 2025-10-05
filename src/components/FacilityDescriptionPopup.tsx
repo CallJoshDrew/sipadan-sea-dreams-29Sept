@@ -3,9 +3,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { useTypewriter } from "@/hooks/useTypewriter";
 import { Lock, Sofa, Shield, X } from "lucide-react";
 
-import privacyImage from "@/assets/facility-images/privacy-resort.jpg";
-import pristineImage from "@/assets/facility-images/pristine-environment.jpg";
-import safetyImage from "@/assets/facility-images/safety-security.jpg";
+import privacyImage from "@/assets/facility-images/privacy.png";
+import pristineImage from "@/assets/facility-images/pristineEnvironment.jpg";
+import safetyImage from "@/assets/facility-images/security.png";
 
 interface FacilityDescriptionPopupProps {
   facility: string;
@@ -17,17 +17,17 @@ const facilityData = {
   Privacy: {
     icon: Lock,
     image: privacyImage,
-    description: "An exclusive private resort for those who value absolute privacy. Enjoy a peaceful escape and complete serenity in your interruption-free paradise.",
+    description: "Enjoy a peaceful escape and complete serenity in your interruption-free paradise.",
   },
   "Pristine Environment": {
     icon: Sofa,
     image: pristineImage,
-    description: "Enjoy your stay where comfort and conservation exist in harmony. For decades, we have been dedicated to environmental stewardship, maintaining both our facilities and the natural surroundings to preserve this paradise.",
+    description: "Experience harmony: Comfort and thoughtful conservation coexist perfectly.",
   },
   Safety: {
     icon: Shield,
     image: safetyImage,
-    description: "Relax in a truly secure environment. Our vigilant safety protocols ensure your peace of mind, so you can focus solely on enjoying your holidays.",
+    description: "Relax in our secure environment; vigilant safety protocols ensure your peace of mind.",
   },
 };
 

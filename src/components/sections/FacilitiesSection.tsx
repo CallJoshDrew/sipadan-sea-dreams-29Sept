@@ -4,9 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, useCarousel } from "@/components/ui/carousel";
 import RoomGallery from "@/components/RoomGallery";
 import FacilityDescriptionPopup from "@/components/FacilityDescriptionPopup";
-import luxuryRoomImage from "@/assets/luxury-room-ocean-view.jpg";
-import luxuryBathroomImage from "@/assets/luxury-bathroom.jpg";
-import luxuryBedroomImage from "@/assets/luxury-bedroom.jpg";
+import exteriorViewImage from "@/assets/room/exteriorView.jpg";
+import innerViewImage from "@/assets/room/interiorView.jpg";
+import balconyViewImage from "@/assets/room/balconyView.jpg";
+import privacyImage from "@/assets/facility-images/privacy.png";
+import pristineImage from "@/assets/facility-images/pristineEnvironment.jpg";
+import safetyImage from "@/assets/facility-images/security.png";
 
 const RoomCarouselDots = ({ roomImages }) => {
   const { api } = useCarousel();
@@ -30,13 +33,7 @@ const RoomCarouselDots = ({ roomImages }) => {
   return (
     <div className="flex justify-center mt-4 space-x-2">
       {roomImages.map((_, index) => (
-        <button
-          key={index}
-          onClick={() => api?.scrollTo(index)}
-          className={`w-2 h-2 rounded-full smooth-transition ${
-            index === current ? 'bg-ocean-primary' : 'bg-gray-300'
-          }`}
-        />
+        <button key={index} onClick={() => api?.scrollTo(index)} className={`w-2 h-2 rounded-full smooth-transition ${index === current ? "bg-ocean-primary" : "bg-gray-300"}`} />
       ))}
     </div>
   );
@@ -45,43 +42,44 @@ const RoomCarouselDots = ({ roomImages }) => {
 const FacilitiesSection = () => {
   const [isRoomGalleryOpen, setIsRoomGalleryOpen] = useState(false);
   const [selectedFacility, setSelectedFacility] = useState<string | null>(null);
-  
+
   const facilities = [
     {
       icon: Lock,
       title: "Privacy",
-      highlight: "Private Resort"
+      highlight: "Private Resort",
+      image: privacyImage, // import this at the top
     },
     {
       icon: Sofa,
       title: "Pristine Environment",
-      highlight: "Comfort & Care"
+      highlight: "Comfort & Care",
+      image: pristineImage,
     },
     {
       icon: Shield,
       title: "Safety",
-      highlight: "24/7 Security"
-    }
+      highlight: "24/7 Security",
+      image: safetyImage,
+    },
   ];
-
   const roomImages = [
     {
-      image: luxuryRoomImage,
-      alt: "Luxury overwater villa room with ocean view",
-      title: "Ocean View Suite"
+      image: exteriorViewImage,
+      alt: "Our Water Chalet seen from the walkway, blending traditional design with the vibrant marine setting",
+      title: "Water Chalet Exterior",
     },
     {
-      image: luxuryBathroomImage,
-      alt: "Luxurious bathroom with ocean views",
-      title: "Spa-like Bathroom"
+      image: innerViewImage,
+      alt: "Room Comfort and Ocean View",
+      title: "Water Chalet Interior",
     },
     {
-      image: luxuryBedroomImage,
-      alt: "Elegant bedroom with panoramic ocean views",
-      title: "Master Bedroom"
-    }
+      image: balconyViewImage,
+      alt: "Enjoy panoramic ocean views",
+      title: "Balcony View",
+    },
   ];
-
 
   return (
     <section className="py-20 bg-background">
@@ -91,82 +89,73 @@ const FacilitiesSection = () => {
             <Heart className="w-6 h-6 mr-3 text-ocean-primary" />
             <span className="text-ocean-primary font-medium text-lg">Peace of Mind</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-6">
-            Expertly Crafted and Maintained
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            We understand what makes a great holiday. Every facility is specially designed and meticulously maintained to ensure your complete focus remains where it belongs: on enjoying your time together.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-6">Expertly Crafted and Maintained</h2>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">We understand what makes a great holiday. Every facility is specially designed and meticulously maintained to ensure your complete focus remains where it belongs: on enjoying your time together.</p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {facilities.map((facility, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl p-8 elegant-shadow smooth-transition hover:ocean-shadow hover:scale-105 cursor-pointer"
+              className="group bg-card rounded-2xl p-6 elegant-shadow smooth-transition hover:ocean-shadow hover:scale-105 cursor-pointer"
               onClick={() => {
                 console.log("Facility clicked:", facility.title);
                 setSelectedFacility(facility.title);
               }}>
-              <div className="flex items-center mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full ocean-gradient mr-4">
-                  <facility.icon className="w-6 h-6 text-white" />
+              <div className="flex items-center">
+                {/* Facility image - 1/3 width */}
+                <div className="basis-1/3 flex-shrink-0">
+                  <img src={facility.image} alt={`${facility.title} facility`} className="w-full aspect-square object-cover rounded-[10px]" />
                 </div>
-                <div className="inline-block bg-ocean-light/20 text-ocean-primary px-3 py-1 rounded-full text-sm font-medium">{facility.highlight}</div>
-              </div>
+                {/* Icon, title, highlight - 2/3 width */}
+                <div className="basis-2/3 flex flex-col pl-4">
+                  <div className="flex items-center mb-2">
+                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full ocean-gradient mr-3 flex-shrink-0">
+                      <facility.icon className="w-6 h-6 text-white" />
+                    </div>
 
-              <h3 className="text-2xl font-bold text-ocean-deep mb-4">{facility.title}</h3>
+                    <div className="inline-block bg-ocean-light/20 text-ocean-primary px-3 py-1 rounded-full text-sm font-medium">{facility.highlight}</div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-ocean-deep">{facility.title}</h3>
+                </div>
+              </div>
             </div>
           ))}
         </div>
-        
+
         {/* Call to Action */}
         <div className="flex justify-center mt-16 pt-16 border-t border-ocean-aqua/20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-11/12">
-          <div>
-            <h3 className="text-3xl font-bold text-ocean-deep mb-6">Wake Up to Paradise</h3>
-            <p className="text-xl text-muted-foreground mb-8">
-              Enjoy your stay with us, where every spacious room offers breathtaking sea views and curated amenities, designed for ultimate tranquility and comfort.
-            </p>
-            <Button 
-              variant="accent" 
-              size="lg" 
-              className="text-lg px-8 py-6"
-              onClick={() => setIsRoomGalleryOpen(true)}
-            >
-              Our Room
-            </Button>
-          </div>
-          <div className="relative">
-            <Carousel className="w-full">
-              <CarouselContent>
-                {roomImages.map((room, index) => (
-                  <CarouselItem key={index}>
-                    <div className="relative rounded-2xl overflow-hidden">
-                      <img 
-                        src={room.image} 
-                        alt={room.alt}
-                        className="w-full h-80 object-cover"
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                        <h4 className="text-white font-semibold text-lg">{room.title}</h4>
+            <div>
+              <h3 className="text-3xl font-bold text-ocean-deep mb-6">Wake Up to Paradise</h3>
+              <p className="text-xl text-muted-foreground mb-8">Enjoy your stay with us, where every spacious room offers breathtaking sea views and curated amenities, designed for ultimate tranquility and comfort.</p>
+              <Button variant="accent" size="lg" className="text-lg px-8 py-6" onClick={() => setIsRoomGalleryOpen(true)}>
+                Our Room
+              </Button>
+            </div>
+            <div className="relative">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {roomImages.map((room, index) => (
+                    <CarouselItem key={index}>
+                      <div className="relative rounded-2xl overflow-hidden">
+                        <img src={room.image} alt={room.alt} className="w-full h-80 object-cover" />
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                          <h4 className="text-white font-semibold text-lg">{room.title}</h4>
+                        </div>
                       </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <RoomCarouselDots roomImages={roomImages} />
-            </Carousel>
-          </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <RoomCarouselDots roomImages={roomImages} />
+              </Carousel>
+            </div>
           </div>
         </div>
       </div>
-      
-      <RoomGallery 
-        isOpen={isRoomGalleryOpen} 
-        onClose={() => setIsRoomGalleryOpen(false)} 
-      />
-      
+
+      <RoomGallery isOpen={isRoomGalleryOpen} onClose={() => setIsRoomGalleryOpen(false)} />
+
       <FacilityDescriptionPopup
         facility={selectedFacility || ""}
         isOpen={!!selectedFacility}

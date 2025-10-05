@@ -3,14 +3,14 @@ import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Import room gallery images
-import overwaterVillaBedroom from "@/assets/room-gallery/overwater-villa-bedroom.jpg";
-import luxuryBathroomOceanView from "@/assets/room-gallery/luxury-bathroom-ocean-view.jpg";
-import suiteLivingArea from "@/assets/room-gallery/suite-living-area.jpg";
-import privateBalcony from "@/assets/room-gallery/private-balcony.jpg";
-import twinBedroom from "@/assets/room-gallery/twin-bedroom.jpg";
-import workspaceArea from "@/assets/room-gallery/workspace-area.jpg";
-import dressingArea from "@/assets/room-gallery/dressing-area.jpg";
-import roomEntrance from "@/assets/room-gallery/room-entrance.jpg";
+import overwaterVillaBedroom from "@/assets/room/kapalaiRoom1.jpg";
+import luxuryBathroomOceanView from "@/assets/room/kapalaiRoom2.jpg";
+import suiteLivingArea from "@/assets/room/kapalaiRoom3.jpg";
+import privateBalcony from "@/assets/room/kapalaiRoom4.jpg";
+import twinBedroom from "@/assets/room/kapalaiRoom5.jpg";
+import workspaceArea from "@/assets/room/kapalaiRoom6.jpg";
+import dressingArea from "@/assets/room/kapalaiRoom7.jpg";
+import roomEntrance from "@/assets/room/kapalaiRoom8.jpg";
 
 const roomImages = [
   { src: overwaterVillaBedroom, alt: "Luxury Overwater Villa Bedroom", title: "Overwater Villa Suite" },
