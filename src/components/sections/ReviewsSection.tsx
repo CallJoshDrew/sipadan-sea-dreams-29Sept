@@ -6,47 +6,95 @@ import teamStaffImage from "@/assets/kapalaiTeamSmilling.png";
 const ReviewsSection = () => {
   const reviews = [
     {
-      name: "Sarah Johnson",
+      name: "Michael M",
       platform: "TripAdvisor",
-      review: "Absolutely breathtaking! The overwater villas are stunning and the diving experiences were world-class. Staff went above and beyond to make our honeymoon perfect.",
-      rating: 5
+      review: "This is our second visit and we love everything about the resort. Staff is great, rooms are really nice and the tub is great for warming up after a dive. The dive center is top notch with great guides (good evening karaoke too!) Food is fine, but could improve.",
+      rating: 4,
     },
     {
-      name: "Michael Chen",
-      platform: "Google Reviews",
-      review: "30 years of excellence really shows. From airport pickup to departure, everything was seamless. The marine life here is incredible - saw sea turtles every day!",
-      rating: 5
-    },
-    {
-      name: "Emma Rodriguez",
-      platform: "Booking.com",
-      review: "Privacy and luxury combined perfectly. The resort truly feels like your own private paradise. Food was exceptional and catered perfectly to our family's needs.",
-      rating: 5
-    },
-    {
-      name: "David Thompson",
-      platform: "Expedia",
-      review: "As a certified dive instructor, I can say this is one of the world's best dive destinations. Professional staff, pristine waters, and unmatched marine biodiversity.",
-      rating: 5
-    },
-    {
-      name: "Lisa Wang",
-      platform: "Agoda",
-      review: "The sunset views from our villa were magical. Every detail was perfect - from the romantic dinner setup to the personalized service. Highly recommended!",
-      rating: 5
-    },
-    {
-      name: "James Wilson",
-      platform: "Hotels.com",
-      review: "Security and safety were top-notch, which was important for our family trip. Kids loved snorkeling and we felt completely at ease the entire stay.",
-      rating: 5
-    },
-    {
-      name: "Maria Santos",
+      name: "Rebecca K",
       platform: "TripAdvisor",
-      review: "Three decades of hospitality mastery! From medical assistance availability to gourmet dining, every aspect exceeded expectations. Pure paradise!",
-      rating: 5
-    }
+      review: "My expectations were low when booking this due to previous average reviews. But I was pleasantly surprised. This place is stunning! It looks like it may have had a recent reno as well? The food was great. The people are great. The diving is great. No complaints here at all! We saw turtles around the overwater villas everyday as well as so many schools of fish. Highly recommend this place!",
+      rating: 5,
+    },
+    {
+      name: "Chinwong69",
+      platform: "TripAdvisor",
+      review: "Stayed at the resort for my dive trip. From pick up at the airport till transfer to the airport on the last day, the service was reasonably good from the different staff. The accomodation was tidy and importantly, well maintained. Food spread was good and there were ample places for eating. Nice surroundings. Good place for those who want to lay back and enjoy tranquility.",
+      rating: 5,
+    },
+    {
+      name: "Cswanston",
+      platform: "TripAdvisor",
+      review: "We had the most amazing 5 days there as a family of 4 with 2 rooms. The place is even more beautiful than the photographs and just strolling along the walkways you see so much wildlife. The staff at the dive centre could not be more helpful if they tried. 3 dives per day are arranged for you and then you can add more or choose to opt out of whichever you don’t want to do and you can always change your mind at any point. There is the chance to play a little bit of influencer-spotting but not as much as one would expect for a place so stunning.",
+      rating: 5,
+    },
+    {
+      name: "Werner G",
+      platform: "Agoda.com",
+      review: "A diving resort with great standardized processes. The diving center is super functional with a super friendly team. The artificial house reef is great and there is always something to see. Sleeping comfort in Villa 19 is great. The food is OK and the people are super nice.",
+      rating: 5,
+    },
+    {
+      name: "Lankylee",
+      platform: "TripAdvisor",
+      review: "Perfect place to chill out and dive surroundings. Sipadan is accessible. Resort without diving is already fantastic. It is an unbeatable combination with a well run diving outfit. Rates are cheap considering what you get. There is a marine police at one corner of large resort.",
+      rating: 5,
+    },
+    {
+      name: "mypassionmyobsession",
+      platform: "TripAdvisor",
+      review: "This is heaven on earth. If you're a diver, this is one of the top diving site in the world. Even if you're not, I would highly recommend for you to start taking lesson and get your license. It's worth it! The food is delicious. Bit spicy for those who doesn't take any spice. So be aware. You can buy fresh seafood from Mabul or Semporna and get them to prepare for you for minimal charge. The rest just breathe and enjoy the beauty of your surroundings.",
+      rating: 5,
+    },
+    {
+      name: "Ferry R",
+      platform: "TripAdvisor",
+      review: "If diving is your passion then you must have Kapalai in your diving checklist! But if you're not then don't worry because the place also is great for those who wants to escape the hustle and bustle. Spacious room and very serene. The food were great and the staffs are very helpful. Take a break and go Kapalai!",
+      rating: 5,
+    },
+    {
+      name: "Lee Meng",
+      platform: "Trip.com",
+      review: "Had a relaxing 4D3N surrounded with awesome view and lots of turtles and fish could be seen from the chalet.  Resort staff are welcoming, approachable and helpful.  Food provided was pleasantly prepared.  However, the public toilet need thorough cleaning & refurbishment, wifi to be made available, more lighting along all the walkways at night.",
+      rating: 4,
+    },
+    {
+      name: "Man Chung",
+      platform: "Trip.com",
+      review: "The sea was so clear. Sea turtles can be seen from the balcony every night. very nice diving coaches. Highly recommended.",
+      rating: 4,
+    },
+    {
+      name: "Chiu",
+      platform: "Trip.com",
+      review: "Good resort for holiday, highly recommend.I had a very good experience in the resort, clean and safe. Overall is good.",
+      rating: 5,
+    },
+    {
+      name: "Rachel",
+      platform: "Agoda.com",
+      review: "The unique geographical location is unmatched by any other hotel. After enjoying three days of relaxation at sea, time seemed to pass slowly. The room has a terrace where you can soak in the bath, view the sea, and daydream. The signal on the island is weak, only near the front desk is there a relatively good signal and Wi-Fi; other places have no Wi-Fi signal. The room is tidy and clean, with housekeeping coming in daily. The overall facilities are somewhat old, but given that it is in the center of the island, such facilities are understandable. The environment is truly perfect; those who love the sea will adore it.",
+      rating: 4,
+    },
+    {
+      name: "Hafizan",
+      platform: "Agoda.com",
+      review: "This is a resort built on a sand bank, with the sandy beach, on one end of the resort, barely visible during high tide. Besides diving, this is where one spends time doing nothing. Even snorkeling in the designated areas gets you acquainted with sea creatures of various sorts. Amenities are more than adequate. Anyone expecting a luxurious holiday with butler service and Michelin-starred cuisine will be utterly disappointed. Staff are friendly and helpful. It was cloudy during my stay and the promise of a breathtaking sunset remained a dream. The presence of armed forces gives you a sense of ensured security.",
+      rating: 4,
+    },
+    {
+      name: "Mohd Lutfi",
+      platform: "Google Review",
+      review: "Room - spacious., have 1 queen size & 1 single for std room Food - a lots. One of the chalet that provide lots of food. View - masha ALLAH... So beautiful Safety - have esscom that patrol daily basis of every chalet Looking forward to come again",
+      rating: 5,
+    },
+    {
+      name: "KSPG",
+      platform: "Google Review",
+      review: "Nice environment, extremely clean emeralds colour sea water, though the sandy beach is small but is white beach and good for photo taking. Consider big compound area for visitors to walk around, no daily tourists visit which keep the area with better privacy. Food is good and well present,  restaurant is also very clean and you can choose open restaurant to enjoy the cool breeze.",
+      rating: 5,
+    },
   ];
 
   return (
@@ -57,14 +105,10 @@ const ReviewsSection = () => {
             <MapPin className="w-6 h-6 mr-3 text-ocean-primary" />
             <span className="text-ocean-primary font-medium text-lg">Your Unforgettable</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-6">
-            Guest Experiences
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover why our guests consistently share outstanding feedback across all platforms. Their stories speak to our commitment to excellence.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-6">Guest Experiences</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Discover why our guests consistently share outstanding feedback across all platforms. Their stories speak to our commitment to excellence.</p>
         </div>
-        
+
         <AutoCarousel autoPlayInterval={4000}>
           {reviews.map((review, index) => (
             <div key={index} className="px-4">
@@ -78,12 +122,10 @@ const ReviewsSection = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* Review Text */}
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  "{review.review}"
-                </p>
-                
+                <p className="text-muted-foreground mb-4 leading-relaxed">"{review.review}"</p>
+
                 {/* Reviewer Info */}
                 <div className="border-t pt-4">
                   <p className="font-semibold text-ocean-deep">{review.name}</p>
@@ -93,26 +135,23 @@ const ReviewsSection = () => {
             </div>
           ))}
         </AutoCarousel>
-        
+
         {/* Booking Section */}
         <div className="mt-16 pt-16 border-t border-ocean-aqua/20">
           <div className="bg-ocean-light/10 rounded-2xl p-8 max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative rounded-2xl overflow-hidden">
-                 <img 
-                  src={teamStaffImage} 
-                  alt="Happy resort team staff including front desk, welcoming team and diving instructors"
-                  className="w-full h-64 lg:h-80 object-cover"
-                />
+                <img src={teamStaffImage} alt="Happy resort team staff including front desk, welcoming team and diving instructors" className="w-full h-64 lg:h-80 object-cover" />
               </div>
               <div className="text-center lg:text-left">
                 <p className="text-xl text-ocean-deep mb-8 leading-relaxed">
                   Discover a legendary destination. Situated above the crystal-clear waters of <span className="font-bold">Semporna, Sabah, Malaysia, Sipadan Kapalai Dive Resort </span>is your gateway to the world's finest diving and an unforgettable holiday. With three decades of dedicated service, we invite you to experience the natural perfection and warm hospitality that have made us a <span className="font-bold">globally recognized icon</span>.
                 </p>
-                
-                <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-                  Booking
-                </Button>
+                <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="accent" size="lg" className="text-lg px-8 py-6">
+                    Booking
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

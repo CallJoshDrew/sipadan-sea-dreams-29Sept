@@ -12,7 +12,7 @@ import worldTravelAward from "@/assets/world-travel-award.png";
 const HeroSection = () => {
   const { ref, isVisible } = useScrollAnimation(0.3);
   const { displayText, isComplete } = useTypewriter({
-    text: "Your journey deserves its destination, where pristine waters are matched only by our exquisite service.",
+    text: "Your journey deserves its destination, where pristine waters meets exquisite service.",
     speed: 40, // 2x faster (80 / 2 = 40)
     delay: 2000,
     trigger: isVisible,
