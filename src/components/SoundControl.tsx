@@ -14,14 +14,20 @@ const SoundControl = ({ isPlaying, onToggle }: SoundControlProps) => {
         variant="outline"
         size="icon"
         onClick={onToggle}
-        className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-200"
+        
+        className="bg-white/70 backdrop-blur-sm border-white/20 hover:bg-white transition-all duration-200 shadow"
         aria-label={isPlaying ? "Mute background sound" : "Play background sound"}
       >
         {isPlaying ? (
+    <Volume2 className="h-4 w-4 text-ocean-deep" />
+  ) : (
+    <VolumeX className="h-4 w-4 text-ocean-deep" />
+  )}
+        {/* {isPlaying ? (
           <Volume2 className="h-4 w-4 text-white" />
         ) : (
           <VolumeX className="h-4 w-4 text-white" />
-        )}
+        )} */}
       </Button>
     </div>
   );

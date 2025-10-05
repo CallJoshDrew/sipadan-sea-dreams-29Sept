@@ -1,7 +1,7 @@
 import { Star, Quote, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AutoCarousel from "@/components/AutoCarousel";
-import teamStaffImage from "@/assets/team-staff-smiling.jpg";
+import teamStaffImage from "@/assets/kapalaiTeamSmilling.png";
 
 const ReviewsSection = () => {
   const reviews = [
@@ -61,8 +61,7 @@ const ReviewsSection = () => {
             Guest Experiences
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover why our guests consistently rate us 5 stars across all platforms. 
-            Their stories speak to our commitment to excellence.
+            Discover why our guests consistently share outstanding feedback across all platforms. Their stories speak to our commitment to excellence.
           </p>
         </div>
         
@@ -108,9 +107,7 @@ const ReviewsSection = () => {
               </div>
               <div className="text-center lg:text-left">
                 <p className="text-xl text-ocean-deep mb-8 leading-relaxed">
-                  With a perfect <span className="font-bold">5.0-star rating</span> from over <span className="font-bold">2,500 happy guests </span> 
-                  and an impressive <span className="font-bold">98% return rate</span>, our commitment to excellence speaks for itself.
-                  Join the thousands of satisfied travelers who have discovered their perfect paradise getaway.
+                  Discover a legendary destination. Situated above the crystal-clear waters of <span className="font-bold">Semporna, Sabah, Malaysia, Sipadan Kapalai Dive Resort </span>is your gateway to the world's finest diving and an unforgettable holiday. With three decades of dedicated service, we invite you to experience the natural perfection and warm hospitality that have made us a <span className="font-bold">globally recognized icon</span>.
                 </p>
                 
                 <Button variant="accent" size="lg" className="text-lg px-8 py-6">
