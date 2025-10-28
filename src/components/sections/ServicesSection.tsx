@@ -8,9 +8,9 @@ import seamlessJourneysImage from "@/assets/service-galleries/seamless-journeys/
 import culinaryExcellenceImage from "@/assets/culinary-excellence.jpg";
 import medicalAssistanceImage from "@/assets/medical-assistance.jpg";
 import tailoredExperiencesImage from "@/assets/tailored-experiences.jpg";
-import gourmetDiningImage from "@/assets/gourmet-dining.jpg";
+import gourmetDiningImage from "@/assets/service-galleries/bbq.png";
 import familyDiningImage from "@/assets/service-galleries/familyDinner.png";
-import kidsFriendlyFoodImage from "@/assets/service-galleries/kidsMeals.png";
+import kidsFriendlyFoodImage from "@/assets/service-galleries/kapalaiChief.png";
 
 const FoodCarouselDots = ({ foodImages }) => {
   const { api } = useCarousel();
@@ -46,9 +46,9 @@ const ServicesSection = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
 
   const foodImages = [
-    { image: gourmetDiningImage, title: "Gourmet Dining" },
-    { image: familyDiningImage, title: "Family Dining" },
-    { image: kidsFriendlyFoodImage, title: "Kids Menu" },
+    { image: gourmetDiningImage, title: "BBQ Night" },
+    { image: familyDiningImage, title: "Buffet Style" },
+    { image: kidsFriendlyFoodImage, title: "Kapalai Chiefs" },
   ];
 
   const services = [

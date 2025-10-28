@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 // Service images
-import airportPickup from "@/assets/service-galleries/seamless-journeys/airport-pickup.png";
-import jettyArrival from "@/assets/service-galleries/seamless-journeys/arrival.jpg";
-import speedboatResort from "@/assets/service-galleries/seamless-journeys/kapalaiArrival.jpg";
+import airportPickup from "@/assets/service-galleries/seamless-journeys/pickup.png";
+import jettyArrival from "@/assets/service-galleries/seamless-journeys/jetty.png";
+import speedboatResort from "@/assets/service-galleries/seamless-journeys/kapalai.png";
 
-import romanticDinner from "@/assets/service-galleries/tailored-experiences/romanticDinner.png";
-import birthdayCelebration from "@/assets/service-galleries/tailored-experiences/birthdayCelebration.png";
-import honeyMoon from "@/assets/service-galleries/tailored-experiences/honeyMoon.jpg";
+import romanticDinner from "@/assets/service-galleries/tailored-experiences/romanticDinnerV2.png";
+import birthdayCelebration from "@/assets/service-galleries/tailored-experiences/fellowship.png";
+import honeyMoon from "@/assets/service-galleries/tailored-experiences/honeyMoonV1.png";
 
 import firstAidKit from "@/assets/service-galleries/medical-assistance/first-aid-kit.jpg";
 import woundTreatment from "@/assets/service-galleries/medical-assistance/wound-treatment.jpg";
@@ -17,8 +17,8 @@ import asthmaAssistance from "@/assets/service-galleries/medical-assistance/asth
 const serviceGalleries = {
   "Seamless Journeys": [
     { src: airportPickup, alt: "Professional airport pickup service for resort guests", title: "Airport Pickup" },
-    { src: jettyArrival, alt: "Guests arriving at resort with welcome drinks", title: "Resort Arrival" },
-    { src: speedboatResort, alt: "Luxury speedboat transfer to tropical resort", title: "Speedboat to Resort" }
+    { src: jettyArrival, alt: "Guests arriving at resort with welcome drinks", title: "Semporna Jetty" },
+    { src: speedboatResort, alt: "Luxury speedboat transfer to tropical resort", title: "Kapalai Arrival" }
   ],
   "Tailored Experiences": [
     { src: romanticDinner, alt: "Romantic candlelit dinner on the beach at sunset", title: "Romantic Dinner" },
