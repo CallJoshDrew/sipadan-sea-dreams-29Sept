@@ -5,7 +5,7 @@ import memorableHolidaysIntro from "@/assets/memorable-holidays-intro.jpg";
 import pristinebeachesImage from "@/assets/activities/nature4.jpg";
 import expertCouplesDivingImage from "@/assets/expert-couples-diving.jpg";
 import beachRelaxImage from "@/assets/beach-relaxation.jpg";
-import sharingStoriesImage from "@/assets/holidays/SharingStories.png";
+import sharingStoriesImage from "@/assets/holidays/sharingStories.png";
 import sunsetImage from "@/assets/holidays/masterPieceV1.png";
 
 // Holiday section component with manual carousel navigation
