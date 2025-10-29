@@ -3,9 +3,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { useTypewriter } from "@/hooks/useTypewriter";
 import { Lock, Sofa, Shield, X } from "lucide-react";
 
-import privacyImage from "@/assets/facility-images/privacy.png";
-import pristineImage from "@/assets/facility-images/pristineEnvironment.jpg";
-import safetyImage from "@/assets/facility-images/security.png";
+import privacyImage from "@/assets/facility-images/privacyV1.png";
+import pristineImage from "@/assets/facility-images/pristineEnvironmentV1.png";
+import safetyImage from "@/assets/facility-images/securityKapalai.png";
 
 interface FacilityDescriptionPopupProps {
   facility: string;
@@ -37,7 +37,7 @@ const FacilityDescriptionPopup = ({ facility, isOpen, onClose }: FacilityDescrip
   const { displayText } = useTypewriter({
     text: currentFacility?.description || "",
     speed: 30,
-    delay: 300,
+    delay: 200,
     trigger: isOpen && !!currentFacility && !!facility,
   });
 
@@ -71,7 +71,7 @@ const FacilityDescriptionPopup = ({ facility, isOpen, onClose }: FacilityDescrip
         </button>
         <div className="relative">
           {/* Image */}
-          <div className="w-full h-64 overflow-hidden">
+          <div className="w-full sm:h-36 md:h-40 lg:h-48 xl:h-72 overflow-hidden">
             <img src={currentFacility.image} alt={facility} className="w-full h-full object-cover" />
           </div>
 
@@ -89,7 +89,7 @@ const FacilityDescriptionPopup = ({ facility, isOpen, onClose }: FacilityDescrip
             <div className="text-center">
               <p className="text-lg text-muted-foreground leading-relaxed min-h-[6rem] flex items-center justify-center">
                 {displayText}
-                <span className="inline-block w-0.5 h-6 bg-ocean-primary ml-1 animate-pulse" />
+                {/* <span className="inline-block w-0.5 h-6 bg-ocean-primary ml-1 animate-pulse" /> */}
               </p>
             </div>
           </div>

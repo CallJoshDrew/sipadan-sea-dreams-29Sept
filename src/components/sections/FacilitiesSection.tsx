@@ -7,9 +7,11 @@ import FacilityDescriptionPopup from "@/components/FacilityDescriptionPopup";
 import exteriorViewImage from "@/assets/room/exteriorView.jpg";
 import innerViewImage from "@/assets/room/interiorView.jpg";
 import balconyViewImage from "@/assets/room/balconyView.jpg";
+import oceanParadiseViewImage from "@/assets/room/oceanParadise.png";
+import housekeepingViewImage from "@/assets/room/kapalaiHousekeeping.png";
 import privacyImage from "@/assets/facility-images/privacy.png";
 import pristineImage from "@/assets/facility-images/pristineEnvironment.jpg";
-import safetyImage from "@/assets/facility-images/security.png";
+import safetyImage from "@/assets/facility-images/securityKapalai.png";
 
 const RoomCarouselDots = ({ roomImages }) => {
   const { api } = useCarousel();
@@ -78,6 +80,16 @@ const FacilitiesSection = () => {
       image: balconyViewImage,
       alt: "Enjoy panoramic ocean views",
       title: "Balcony View",
+    },
+    {
+      image: oceanParadiseViewImage,
+      alt: "Enjoy our peaceful and steady architecture that blends with the nature",
+      title: "Ocean Paradise",
+    },
+    {
+      image: housekeepingViewImage,
+      alt: "Kapalai Resort Housekeeping Services",
+      title: "Kapalai Housekeeping",
     },
   ];
 
