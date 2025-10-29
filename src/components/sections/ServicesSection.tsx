@@ -5,12 +5,14 @@ import { Carousel, CarouselContent, CarouselItem, useCarousel } from "@/componen
 import FoodGallery from "@/components/FoodGallery";
 import ServiceGallery from "@/components/ServiceGallery";
 import seamlessJourneysImage from "@/assets/service-galleries/seamless-journeys/seemless_journey.png";
-import culinaryExcellenceImage from "@/assets/culinary-excellence.jpg";
-import medicalAssistanceImage from "@/assets/medical-assistance.jpg";
+// import culinaryExcellenceImage from "@/assets/culinary-excellence.jpg";
+// import medicalAssistanceImage from "@/assets/medical-assistance.jpg";
 import tailoredExperiencesImage from "@/assets/tailored-experiences.jpg";
-import gourmetDiningImage from "@/assets/service-galleries/bbq.png";
-import familyDiningImage from "@/assets/service-galleries/familyDinner.png";
-import kidsFriendlyFoodImage from "@/assets/service-galleries/kapalaiChief.png";
+import bbqImage from "@/assets/service-galleries/bbq.png";
+import buffetStyleImage from "@/assets/service-galleries/buffetStyle.png";
+import familyDiningImage from "@/assets/service-galleries/familyDinnerV1.png";
+import kapalaiChiefImage from "@/assets/service-galleries/kapalaiChief.png";
+import serviceStaffImage from "@/assets/service-galleries/serviceStaff.png";
 
 const FoodCarouselDots = ({ foodImages }) => {
   const { api } = useCarousel();
@@ -46,9 +48,11 @@ const ServicesSection = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
 
   const foodImages = [
-    { image: gourmetDiningImage, title: "BBQ Night" },
-    { image: familyDiningImage, title: "Buffet Style" },
-    { image: kidsFriendlyFoodImage, title: "Kapalai Chiefs" },
+    { image: bbqImage, title: "BBQ Night" },
+    { image: buffetStyleImage, title: "Buffet Style" },
+    { image: familyDiningImage, title: "Family Dinner" },
+    { image: kapalaiChiefImage, title: "Kapalai Chiefs" },
+    { image: serviceStaffImage, title: "Service Staff" },
   ];
 
   const services = [
@@ -121,7 +125,7 @@ const ServicesSection = () => {
                   {foodImages.map((food, index) => (
                     <CarouselItem key={index}>
                       <div className="relative rounded-2xl overflow-hidden">
-                        <img src={food.image} alt={`${food.title} experience at the resort`} className="w-full h-80 object-cover" />
+                        <img src={food.image} alt={`${food.title} experience at the resort`} className="w-full sm:h-36 md:h-40 lg:h-48 xl:h-80 object-cover" />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                           <h4 className="text-white font-semibold text-lg">{food.title}</h4>
                         </div>

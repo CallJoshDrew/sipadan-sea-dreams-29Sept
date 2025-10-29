@@ -17,19 +17,19 @@ import asthmaAssistance from "@/assets/service-galleries/medical-assistance/asth
 const serviceGalleries = {
   "Seamless Journeys": [
     { src: airportPickup, alt: "Professional airport pickup service for resort guests", title: "Airport Pickup" },
-    { src: jettyArrival, alt: "Guests arriving at resort with welcome drinks", title: "Semporna Jetty" },
-    { src: speedboatResort, alt: "Luxury speedboat transfer to tropical resort", title: "Kapalai Arrival" }
+    { src: jettyArrival, alt: "Guests arriving at Semporna Kapalai Jetty", title: "Semporna Jetty" },
+    { src: speedboatResort, alt: "Speedboat transfer to Sipadan Kapalai Resort", title: "Kapalai Arrival" }
   ],
   "Tailored Experiences": [
     { src: romanticDinner, alt: "Romantic candlelit dinner on the beach at sunset", title: "Romantic Dinner" },
-    { src: birthdayCelebration, alt: "Special birthday celebration at tropical resort", title: "Birthday Celebration" },
+    { src: birthdayCelebration, alt: "Special arrangement for the perfect meals with your love ones", title: "Special Arrangement" },
     { src: honeyMoon, alt: "A honeymoon bed decorated with towel swans and flowers", title: "Honeymoon" }
   ],
-  "Medical Assistance": [
-    { src: firstAidKit, alt: "Professional first aid kit with medical supplies", title: "First Aid Kit" },
-    { src: woundTreatment, alt: "Medical professional treating guest's wound", title: "Wound Treatment" },
-    { src: asthmaAssistance, alt: "Staff helping guest with asthma condition", title: "Asthma Assistance" }
-  ]
+  // "Medical Assistance": [
+  //   { src: firstAidKit, alt: "Professional first aid kit with medical supplies", title: "First Aid Kit" },
+  //   { src: woundTreatment, alt: "Medical professional treating guest's wound", title: "Wound Treatment" },
+  //   { src: asthmaAssistance, alt: "Staff helping guest with asthma condition", title: "Asthma Assistance" }
+  // ]
 };
 
 interface ServiceGalleryProps {
