@@ -91,7 +91,7 @@ const Navigation = () => {
                     Enquiry
                   </button>
                 </ContactDialog> */}
-                <div className="flex justify-center">
+                <div className="flex">
                   <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
                     <Button variant="book-now">Book Now</Button>
                   </a>

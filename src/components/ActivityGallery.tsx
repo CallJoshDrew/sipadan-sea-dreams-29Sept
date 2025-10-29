@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 // Diving images
-import divingCoralReef from "@/assets/activities/diving1.jpg";
+import divingCoralReef from "@/assets/activities/diving5.png";
 // import coupleDivingAdventure from "@/assets/activity-galleries/diving/couple-diving-adventure.jpg";
 // import caveDivingExploration from "@/assets/activity-galleries/diving/cave-diving-exploration.jpg";
-import divingInstruction from "@/assets/activities/diving3.png";
-import marineLifeCloseup from "@/assets/activities/diving4.png";
+import divingInstruction from "@/assets/activities/diving3a.png";
+import marineLifeCloseup from "@/assets/activities/diving4a.png";
 
 // Kayaking images
-import peacefulLagoonKayaking from "@/assets/activities/kayaking.jpg";
+import peacefulLagoonKayaking from "@/assets/activities/kayaking0a.png";
 import sunsetCoupleKayaking from "@/assets/activities/kayaking2.jpg";
 // import mangroveKayakAdventure from "@/assets/activity-galleries/kayaking/mangrove-kayak-adventure.jpg";
 import soloTurquoiseKayaking from "@/assets/activities/kayaking3.jpg";
@@ -30,11 +30,11 @@ import villageCulturalCycling from "@/assets/activity-galleries/cycling/village-
 import sunsetCyclingAdventure from "@/assets/activity-galleries/cycling/sunset-cycling-adventure.jpg";
 
 // Nature images
-import spectacularOceanSunset from "@/assets/activities/nature.jpg";
-import tropicalSunriseBeach from "@/assets/activities/nature5.jpg";
+import spectacularOceanSunset from "@/assets/activities/nature0a.png";
+import tropicalSunriseBeach from "@/assets/activities/nature5a.png";
 // import coupleBeachRelaxation from "@/assets/activity-galleries/nature/couple-beach-relaxation.jpg";
 // import beachConversationFriends from "@/assets/activity-galleries/nature/beach-conversation-friends.jpg";
-import peacefulHammockRelaxation from "@/assets/activities/nature3.jpg";
+import peacefulHammockRelaxation from "@/assets/activities/nature3a.png";
 
 const activityGalleries = {
   "Diving": [
@@ -113,7 +113,7 @@ const ActivityGallery = ({ activity, isOpen, onClose }: ActivityGalleryProps) =>
           
           {/* Gallery header */}
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{activity}</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-white mb-2">{activity}</h2>
             <p className="text-ocean-pearl text-lg">
               {currentImageIndex + 1} of {images.length}
             </p>
@@ -124,13 +124,13 @@ const ActivityGallery = ({ activity, isOpen, onClose }: ActivityGalleryProps) =>
             <img
               src={images[currentImageIndex].src}
               alt={images[currentImageIndex].alt}
-              className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-2xl"
+              className="w-full sm:h-40 md:h-48 lg:h-80 xl:h-96 object-cover rounded-lg shadow-2xl"
             />
             
             
             {/* Image title */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ocean-deep/80 to-transparent p-6">
-              <h3 className="text-xl font-bold text-white mb-1">
+              <h3 className="text-lg font-bold text-white mb-1">
                 {images[currentImageIndex].title}
               </h3>
             </div>
@@ -142,7 +142,7 @@ const ActivityGallery = ({ activity, isOpen, onClose }: ActivityGalleryProps) =>
               <button
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
-                className={`flex-shrink-0 w-12 h-10 sm:w-16 sm:h-12 md:w-20 md:h-16 rounded-lg overflow-hidden border-2 smooth-transition ${
+                className={`flex-shrink-0 w-12 h-10 sm:w-16 sm:h-12 md:w-20 md:h-16 rounded-sm overflow-hidden border-2 smooth-transition ${
                   index === currentImageIndex 
                     ? 'border-ocean-light' 
                     : 'border-white/30 hover:border-white/60'

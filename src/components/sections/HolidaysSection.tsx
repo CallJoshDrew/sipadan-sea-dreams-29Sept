@@ -2,11 +2,11 @@ import { useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import memorableHolidaysIntro from "@/assets/memorable-holidays-intro.jpg";
-import couplesImage from "@/assets/activities/nature4.jpg";
+import pristinebeachesImage from "@/assets/activities/nature4.jpg";
 import expertCouplesDivingImage from "@/assets/expert-couples-diving.jpg";
 import beachRelaxImage from "@/assets/beach-relaxation.jpg";
-import beachImage from "@/assets/beach-conversation.jpg";
-import sunsetImage from "@/assets/sunset-watching.jpg";
+import sharingStoriesImage from "@/assets/holidays/SharingStories.png";
+import sunsetImage from "@/assets/holidays/masterPieceV1.png";
 
 // Holiday section component with manual carousel navigation
 const HolidaysSection = () => {
@@ -16,7 +16,7 @@ const HolidaysSection = () => {
   
   const slides = [
     {
-      image: couplesImage,
+      image: pristinebeachesImage,
       caption: "Creating precious memories on pristine beaches"
     },
     {
@@ -28,7 +28,7 @@ const HolidaysSection = () => {
       caption: "Finding perfect moments of tranquility"
     },
     {
-      image: beachImage,
+      image: sharingStoriesImage,
       caption: "Sharing stories under endless skies"
     },
     {
@@ -37,7 +37,7 @@ const HolidaysSection = () => {
     }
   ];
 
-  const introText = "A great holiday isn't just about where you go—it's about the moments you share. It's about taking a break from the everyday to truly connect with the ones you love.";
+  const introText = "A great holidays is to share moments and truly connect with loved ones that last a lifetime.";
 
   // Typewriting effect - runs continuously and repeats
   useEffect(() => {
@@ -74,18 +74,13 @@ const HolidaysSection = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-secondary to-ocean-pearl">
       <div className="container mx-auto px-4">
-        
-        
         {/* Responsive Device Frame with Carousel */}
         <div className="max-w-5xl mx-auto">
           {/* Desktop: iPad Frame */}
           <div className="hidden md:block">
             <div className="relative bg-gray-900 rounded-3xl p-6 shadow-2xl">
-              {/* iPad Bezel */}
-              <div className="relative bg-black rounded-2xl overflow-hidden" style={{ aspectRatio: '4/3' }}>
-                {/* Home Button */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gray-800 rounded-full border-2 border-gray-700"></div>
-                
+              {/* iPad Bezel and change the image size by this aspect ratio*/}
+              <div className="relative bg-black rounded-2xl overflow-hidden" style={{ aspectRatio: '4/2.4' }}>
                  {/* Screen Content */}
                  <div className="relative w-full h-full">
                    {/* Static Header - Always Visible */}
@@ -144,8 +139,8 @@ const HolidaysSection = () => {
           {/* Mobile: iPhone Frame */}
           <div className="block md:hidden">
             <div className="relative bg-gray-900 rounded-3xl p-3 shadow-2xl max-w-sm mx-auto">
-              {/* iPhone Bezel */}
-              <div className="relative bg-black rounded-2xl overflow-hidden" style={{ aspectRatio: '9/16' }}>
+              {/* iPhone Bezel and change the image size by this aspect ratio*/}
+              <div className="relative bg-black rounded-2xl overflow-hidden" style={{ aspectRatio: '9/14.4' }}>
                 {/* Dynamic Island */}
                 <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-24 h-6 bg-gray-900 rounded-full"></div>
                 

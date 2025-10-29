@@ -55,7 +55,7 @@ const FacilitiesSection = () => {
     {
       icon: Sofa,
       title: "Pristine Environment",
-      highlight: "Pure Nurture",
+      highlight: "Pure Nature",
       image: pristineImage,
     },
     {

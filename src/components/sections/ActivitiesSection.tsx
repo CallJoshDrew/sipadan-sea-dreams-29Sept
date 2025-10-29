@@ -13,28 +13,28 @@ const ActivitiesSection = () => {
     {
       image: underwaterImage,
       title: "Diving",
-      description: "Explore the depths of crystal clear waters"
+      // description: "Explore the depths of crystal clear waters"
     },
     {
       image: kayakingImage,
       title: "Kayaking",
-      description: "Paddle through serene tropical waters"
+      // description: "Paddle through serene tropical waters"
     },
     {
       image: snorkelingImage,
       title: "Snorkeling",
-      description: "Discover vibrant coral reefs and marine life"
+      // description: "Discover vibrant coral reefs and marine life"
     },
     {
       image: cyclingImage,
       title: "Cycling",
-      description: "Ride along scenic coastal paths"
+      // description: "Ride along scenic coastal paths"
     },
     {
       image: natureImage,
       title: "Nature Observation & Relaxation",
-      description: "Unwind while watching spectacular sunsets"
-    }
+      // description: "Unwind while watching spectacular sunsets"
+    },
   ];
 
   return (
@@ -45,45 +45,30 @@ const ActivitiesSection = () => {
             <Waves className="w-6 h-6 mr-3 text-ocean-primary" />
             <span className="text-ocean-primary font-medium text-lg">Amazing Activities</span>
           </div>
-          
-          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-4">
-            Encounters of Discovery
-          </h2>
-          <p className="text-lg text-ocean-primary max-w-2xl mx-auto">
-            Discover endless adventures both above and below the surface
-          </p>
+
+          <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-4">Encounters of Discovery</h2>
+          <p className="text-lg text-ocean-primary max-w-2xl mx-auto">Discover endless adventures both above and below the surface</p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {activities.map((activity, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg aspect-[4/5] hover-scale cursor-pointer"
-              onClick={() => setSelectedActivity(activity.title)}
-            >
-              <img
-                src={activity.image}
-                alt={activity.title}
-                className="w-full h-full object-cover smooth-transition group-hover:scale-110"
-              />
+              className={`group relative overflow-hidden rounded-lg hover-scale cursor-pointer
+        ${index === activities.length - 1 ? "col-span-2 aspect-[16/12] md:col-span-1 md:aspect-[4/5] lg:col-span-1" : "aspect-[4/5]"}`}
+              onClick={() => setSelectedActivity(activity.title)}>
+              <img src={activity.image} alt={activity.title} className="w-full h-full object-cover smooth-transition group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/80 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                <h3 className="text-lg font-bold mb-2">{activity.title}</h3>
-                <p className="text-sm text-ocean-pearl opacity-90">
-                  {activity.description}
-                </p>
+                <h3 className="text-base font-bold mb-1 xs:text-sm sm:text-sm md:text-lg">{activity.title}</h3>
               </div>
             </div>
           ))}
         </div>
       </div>
-      
+
       {/* Activity Gallery Modal */}
-      <ActivityGallery
-        activity={selectedActivity || ""}
-        isOpen={!!selectedActivity}
-        onClose={() => setSelectedActivity(null)}
-      />
+      <ActivityGallery activity={selectedActivity || ""} isOpen={!!selectedActivity} onClose={() => setSelectedActivity(null)} />
     </section>
   );
 };
