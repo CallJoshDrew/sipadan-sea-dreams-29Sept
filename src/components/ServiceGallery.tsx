@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 // Service images
-import airportPickup from "@/assets/service-galleries/seamless-journeys/pickup.png";
-import jettyArrival from "@/assets/service-galleries/seamless-journeys/jetty.png";
+import airportPickup from "@/assets/service-galleries/seamless-journeys/pickupV1.png";
+import jettyArrival from "@/assets/service-galleries/seamless-journeys/jettyV1.png";
 import speedboatResort from "@/assets/service-galleries/seamless-journeys/kapalai.png";
 
 import romanticDinner from "@/assets/service-galleries/tailored-experiences/romanticDinnerV2.png";

@@ -1,7 +1,7 @@
 import { Star, Quote, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AutoCarousel from "@/components/AutoCarousel";
-import teamStaffImage from "@/assets/kapalaiTeamSmilling.png";
+import teamStaffImage from "@/assets/KapalaiReceptionisnts.png";
 
 const ReviewsSection = () => {
   const reviews = [
