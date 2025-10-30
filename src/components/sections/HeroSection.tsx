@@ -13,8 +13,8 @@ const HeroSection = () => {
   const { ref, isVisible } = useScrollAnimation(0.3);
   const { displayText, isComplete } = useTypewriter({
     text: "Your journey deserves its destination, where pristine waters meets exquisite service.",
-    speed: 40, // 2x faster (80 / 2 = 40)
-    delay: 2000,
+    speed: 30, // 2x faster (80 / 2 = 40)
+    delay: 500,
     trigger: isVisible,
   });
 
@@ -60,10 +60,8 @@ const HeroSection = () => {
           <span className="text-ocean-aqua">Dive Resort</span>
         </h1>
 
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-ocean-pearl min-h-[4rem] flex items-center justify-center">
-          {displayText}
-          {/* {!isComplete && <span className="animate-pulse ml-1">|</span>} */}
-        </p>
+        {/* Fixed: Set a fixed height that accommodates the maximum text lines */}
+        <div className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-ocean-pearl min-h-[6rem] md:min-h-[5rem] flex items-center justify-center">{displayText}</div>
 
         <div className="flex justify-center items-center opacity-0 animate-fade-in delay-1500">
           <Button variant="accent" size="lg" className="text-lg px-8 py-6" onClick={scrollToDiveExpert}>
