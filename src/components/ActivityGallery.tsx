@@ -2,72 +2,98 @@ import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 // Diving images
-import divingCoralReef from "@/assets/activities/diving5.png";
+import divingSurprise from "@/assets/activities/diving5.png";
 // import coupleDivingAdventure from "@/assets/activity-galleries/diving/couple-diving-adventure.jpg";
 // import caveDivingExploration from "@/assets/activity-galleries/diving/cave-diving-exploration.jpg";
-import divingInstruction from "@/assets/activities/diving3a.png";
-import marineLifeCloseup from "@/assets/activities/diving4a.png";
+import marineLifeCloseup1 from "@/assets/activities/diving3b.png";
+import marineLifeCloseup2 from "@/assets/activities/diving4b.png";
+import marineLifeCloseup3 from "@/assets/activities/diving6.png";
+// import marineLifeCloseup4 from "@/assets/activities/diving7.png";
+import marineLifeCloseup5 from "@/assets/activities/diving8.png";
+import instructorDivers from "@/assets/activities/diving9.png";
 
 // Kayaking images
-import peacefulLagoonKayaking from "@/assets/activities/kayaking0a.png";
-import sunsetCoupleKayaking from "@/assets/activities/kayaking2.jpg";
+import couplesKayaking from "@/assets/activities/kayaking0a.png";
+import soloKayaking from "@/assets/activities/kayaking1a.png";
+import inhouseKayaking from "@/assets/activities/kayaking4.png";
 // import mangroveKayakAdventure from "@/assets/activity-galleries/kayaking/mangrove-kayak-adventure.jpg";
-import soloTurquoiseKayaking from "@/assets/activities/kayaking3.jpg";
+import whiteSandKayaking from "@/assets/activities/kayaking2a.png";
+import soloTurquoiseKayaking from "@/assets/activities/kayaking3a.png";
 // import groupMountainKayaking from "@/assets/activity-galleries/kayaking/group-mountain-kayaking.jpg";
 
 // Snorkeling images
-import familyReefSnorkeling from "@/assets/activities/snorkeling1.jpg";
-import seaTurtleEncounter from "@/assets/activities/snorkeling2.jpg";
-import reefFromAbove from "@/assets/activities/snorkeling3.jpg";
+import largeAreaSnorkeling from "@/assets/activities/snorkeling5.png";
+import touristSnorkeling from "@/assets/activities/snorkeling4.png";
+import closeUpSnorkeling from "@/assets/activities/snorkeling6.png";
+import soloSnorkeling1 from "@/assets/activities/snorkeling1a.png";
+import soloSnorkeling2 from "@/assets/activities/snorkeling2a.png";
 // import coupleSnorkeling from "@/assets/activity-galleries/snorkeling/couple-snorkeling.jpg";
 // import snorkelGearBeach from "@/assets/activity-galleries/snorkeling/snorkel-gear-beach.jpg";
 
 // Cycling images
 // import coastalPathCycling from "@/assets/activity-galleries/cycling/coastal-path-cycling.jpg";
 // import mountainBikeTrails from "@/assets/activity-galleries/cycling/mountain-bike-trails.jpg";
-import coupleBeachCycling from "@/assets/activity-galleries/cycling/couple-beach-cycling.jpg";
-import villageCulturalCycling from "@/assets/activity-galleries/cycling/village-cultural-cycling.jpg";
-import sunsetCyclingAdventure from "@/assets/activity-galleries/cycling/sunset-cycling-adventure.jpg";
+import kapalaiCycling from "@/assets/activities/cycling1.png";
+import sandbarCycling from "@/assets/activities/cycling2.png";
+import cyclingAdventure from "@/assets/activities/cycling3.png";
+import cyclingCompanions from "@/assets/activities/cycling4.png";
+import sunsetCycling from "@/assets/activities/cycling5.png";
 
 // Nature images
 import spectacularOceanSunset from "@/assets/activities/nature0a.png";
 import tropicalSunriseBeach from "@/assets/activities/nature5a.png";
+import beautifulScene1 from "@/assets/activities/nature6.png";
+import beautifulScene2 from "@/assets/activities/nature7.png";
+import sunsetView from "@/assets/activities/nature2a.png";
 // import coupleBeachRelaxation from "@/assets/activity-galleries/nature/couple-beach-relaxation.jpg";
 // import beachConversationFriends from "@/assets/activity-galleries/nature/beach-conversation-friends.jpg";
 import peacefulHammockRelaxation from "@/assets/activities/nature3a.png";
 
 const activityGalleries = {
   "Diving": [
-    { src: divingCoralReef, alt: "Professional scuba divers giving training", title: "Guidance" },
+    { src: divingSurprise, alt: "Professional scuba divers with surpise marine underwater", title: "Surprise" },
     // { src: coupleDivingAdventure, alt: "Couple diving together underwater", title: "Romantic Diving Adventure" },
     // { src: caveDivingExploration, alt: "Underwater cave diving with dramatic lighting", title: "Cave Diving Exploration" },
-    { src: divingInstruction, alt: "Professional diving instruction underwater", title: "Diving Lessons" },
-    { src: marineLifeCloseup, alt: "Close-up of tropical fish and coral formations", title: "Marine Life Discovery" }
+    { src: marineLifeCloseup1, alt: "Close-up of tropical fish and coral formations", title: "Marine Life Discovery" },
+    { src: marineLifeCloseup2, alt: "Close-up of tropical fish and coral formations", title: "Marine Life Discovery" },
+    { src: marineLifeCloseup3, alt: "Close-up of tropical fish and coral formations", title: "Marine Life Discovery" },
+    // { src: marineLifeCloseup4, alt: "Close-up of tropical fish and coral formations", title: "Marine Life Discovery" },
+    { src: marineLifeCloseup5, alt: "Close-up of tropical fish and coral formations", title: "Marine Life Discovery" },
+    { src: instructorDivers, alt: "Sipadan Kapalai Resort Diving Instructors", title: "Kapalai Instructors" }
   ],
   "Kayaking": [
-    { src: peacefulLagoonKayaking, alt: "Peaceful kayaking in crystal clear lagoon", title: "Kayaking" },
-    { src: sunsetCoupleKayaking, alt: "Solo kayaker in turquoise waters", title: "Solo Exploration" },
+    { src: couplesKayaking, alt: "Peaceful kayaking in crystal clear lagoon", title: "Kayaking" },
+    { src: soloKayaking, alt: "Solo kayaker in turquoise waters", title: "Solo Exploration" },
+    { src: inhouseKayaking, alt: "kayaking inside the resort", title: "Solo Exploration" },
+    { src: whiteSandKayaking, alt: "kayaking near the white sand area", title: "Solo Exploration" },
     // { src: mangroveKayakAdventure, alt: "Kayaking through mangrove channels", title: "Mangrove Adventure" },
     { src: soloTurquoiseKayaking, alt: "Solo kayaker in turquoise waters", title: "Solo Exploration" },
     // { src: groupMountainKayaking, alt: "Group kayaking with mountain backdrop", title: "Group Expedition" }
   ],
   "Snorkeling": [
-    { src: familyReefSnorkeling, alt: "Family snorkeling in shallow coral waters", title: "Snorkeling Scene" },
-    { src: seaTurtleEncounter, alt: "Snorkeler observing sea turtle", title: "Snorkeling Scene" },
-    { src: reefFromAbove, alt: "Colorful reef view from above", title: "Snorkeling Scene" },
+    { src: largeAreaSnorkeling, alt: "Large area of nature snorkeling in shallow coral waters", title: "Snorkeling Scene" },
+    { src: touristSnorkeling, alt: "Tourist Snorkeler observing sea area", title: "Snorkeling Scene" },
+    { src: closeUpSnorkeling, alt: "close up snorkeling", title: "Snorkeling Scene" },
+    { src: soloSnorkeling1, alt: "solo adventures of snorkeling", title: "Snorkeling Scene" },
+    { src: soloSnorkeling2, alt: "solo adventures of snorkeling", title: "Snorkeling Scene" },
     // { src: coupleSnorkeling, alt: "Couple snorkeling together", title: "Romantic Snorkeling" },
     // { src: snorkelGearBeach, alt: "Snorkeling gear on tropical beach", title: "Beach Preparation" }
   ],
   "Cycling": [
     // { src: coastalPathCycling, alt: "Scenic coastal cycling with ocean views", title: "Coastal Adventure" },
     // { src: mountainBikeTrails, alt: "Mountain biking through tropical trails", title: "Trail Exploration" },
-    { src: coupleBeachCycling, alt: "Couple cycling on beach pathway", title: "Beach Cycling" },
-    { src: villageCulturalCycling, alt: "Cycling through local village", title: "Cultural Tour" },
-    { src: sunsetCyclingAdventure, alt: "Cycling at dramatic sunset", title: "Sunset Ride" }
+    { src: kapalaiCycling, alt: "Couple cycling on beach pathway", title: "Beach Cycling" },
+    { src: sandbarCycling, alt: "Cycling through local village", title: "Cultural Tour" },
+    { src: cyclingAdventure, alt: "Cycling at dramatic sunset", title: "Sunset Ride" },
+    { src: cyclingCompanions, alt: "Cycling at dramatic sunset", title: "Sunset Ride" },
+    { src: sunsetCycling, alt: "Cycling at dramatic sunset", title: "Sunset Ride" }
   ],
   "Nature Observation & Relaxation": [
     { src: spectacularOceanSunset, alt: "Spectacular sunset over calm ocean", title: "Ocean Sunset" },
     { src: tropicalSunriseBeach, alt: "Beautiful sunrise from tropical beach", title: "Beach Sunrise" },
+    { src: beautifulScene1, alt: "Beautiful architech of the resort", title: "Beautiful" },
+    { src: beautifulScene2, alt: "Beautifully blend with the nature", title: "Nature" },
+    { src: sunsetView, alt: "sunset view from the resort", title: "Sun View" },
     // { src: coupleBeachRelaxation, alt: "Couple relaxing on white sand beach", title: "Beach Relaxation" },
     // { src: beachConversationFriends, alt: "Friends enjoying beach conversation", title: "Social Moments" },
     { src: peacefulHammockRelaxation, alt: "Enjoy the beautiful sunset while relax", title: "Relaxation" }
@@ -129,11 +155,11 @@ const ActivityGallery = ({ activity, isOpen, onClose }: ActivityGalleryProps) =>
             
             
             {/* Image title */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ocean-deep/80 to-transparent p-6">
+            {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ocean-deep/80 to-transparent p-6">
               <h3 className="text-lg font-bold text-white mb-1">
                 {images[currentImageIndex].title}
               </h3>
-            </div>
+            </div> */}
           </div>
 
           {/* Thumbnail navigation */}
