@@ -37,9 +37,10 @@ const HeroSection = () => {
       {" "}
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(${heroImage})`,
+          backgroundPosition: "20% center", // Start with 25%, adjust as needed
           transform: isVisible ? "scale(1.3)" : "scale(1.0)",
           transition: isVisible ? "transform 10s ease-out" : "none",
         }}
@@ -61,7 +62,7 @@ const HeroSection = () => {
 
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-ocean-pearl min-h-[4rem] flex items-center justify-center">
           {displayText}
-          {!isComplete && <span className="animate-pulse ml-1">|</span>}
+          {/* {!isComplete && <span className="animate-pulse ml-1">|</span>} */}
         </p>
 
         <div className="flex justify-center items-center opacity-0 animate-fade-in delay-1500">
