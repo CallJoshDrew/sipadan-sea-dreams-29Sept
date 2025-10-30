@@ -123,6 +123,13 @@ const ActivityGallery = ({ activity, isOpen, onClose }: ActivityGalleryProps) =>
     };
   }, [isOpen]);
 
+  // Reset currentImageIndex to 1 when gallery opens
+  useEffect(() => {
+    if (isOpen && images.length > 0) {
+      setCurrentImageIndex(0);
+    }
+  }, [isOpen, images.length]);
+
   if (!isOpen || !images.length) return null;
 
   return (
