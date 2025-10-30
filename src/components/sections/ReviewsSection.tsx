@@ -106,7 +106,7 @@ const ReviewsSection = () => {
             <span className="text-ocean-primary font-medium text-lg">Your Unforgettable</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-6">Guest Experiences</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Discover why our guests consistently share outstanding feedback across all platforms. Their stories speak to our commitment to excellence.</p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">See why our guests consistently share outstanding feedback across all platforms.</p>
         </div>
 
         <AutoCarousel autoPlayInterval={4000}>
@@ -145,7 +145,7 @@ const ReviewsSection = () => {
               </div>
               <div className="text-center lg:text-left">
                 <p className="text-xl text-ocean-deep mb-8 leading-relaxed">
-                  Discover a legendary destination. Situated above the crystal-clear waters of <span className="font-bold">Semporna, Sabah, Malaysia, Sipadan Kapalai Dive Resort </span>is your gateway to the world's finest diving and an unforgettable holiday. With three decades of dedicated service, we invite you to experience the natural perfection and warm hospitality that have made us a <span className="font-bold">globally recognized icon</span>.
+                  Discover <span className="font-bold">Sipadan Kapalai Dive Resort in Semporna, Sabah, Malaysia</span>—a legendary destination above crystal-clear waters, offering <span className="font-bold">world-class diving</span> and <span className="font-bold">three decades of iconic hospitality</span>. Book your unforgettable island escape today!
                 </p>
                 <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
                   <Button variant="accent" size="lg" className="text-lg px-8 py-6">

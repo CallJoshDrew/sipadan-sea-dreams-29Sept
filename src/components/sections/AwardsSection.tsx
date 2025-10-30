@@ -36,7 +36,7 @@ const AwardsSection = () => {
       <div className="container mx-auto px-4" ref={ref}>
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-4">30 Years of Service</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Three decades of prestigious recognition and unwavering commitment to marine conservation and impeccable service.</p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Three decades of prestigious recognition and unwavering commitment.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-8xl mx-auto">

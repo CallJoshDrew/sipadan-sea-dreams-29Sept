@@ -73,11 +73,11 @@ const Footer = () => {
               <a href="#holidays" className="block text-gray-300 hover:text-ocean-pearl smooth-transition">
                 Holidays
               </a>
-              <a href="#facilities" className="block text-gray-300 hover:text-ocean-pearl smooth-transition">
-                Facilities
-              </a>
               <a href="#services" className="block text-gray-300 hover:text-ocean-pearl smooth-transition">
                 Services
+              </a>
+              <a href="#facilities" className="block text-gray-300 hover:text-ocean-pearl smooth-transition">
+                Facilities
               </a>
               <a href="#reviews" className="block text-gray-300 hover:text-ocean-pearl smooth-transition">
                 Reviews

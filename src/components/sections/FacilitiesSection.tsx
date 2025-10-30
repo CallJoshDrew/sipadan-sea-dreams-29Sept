@@ -102,7 +102,7 @@ const FacilitiesSection = () => {
             <span className="text-ocean-primary font-medium text-lg">Peace of Mind</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-ocean-deep mb-6">Expertly Crafted and Maintained</h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">We understand what makes a great holiday. Every facility is specially designed and meticulously maintained to ensure your complete focus remains where it belongs: on enjoying your time together.</p>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2 md:px-14">Every facility is designed and maintained to ensure your complete focus remains on enjoying time together</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -140,7 +140,7 @@ const FacilitiesSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-11/12">
             <div>
               <h3 className="text-3xl font-bold text-ocean-deep mb-6">Wake Up to Paradise</h3>
-              <p className="text-xl text-muted-foreground mb-8">Enjoy your stay with us, where every spacious room offers breathtaking sea views and curated amenities, designed for ultimate tranquility and comfort.</p>
+              <p className="text-xl text-muted-foreground mb-8">Every spacious room offers breathtaking sea views and curated amenities for ultimate tranquility and comfort.</p>
               <Button variant="accent" size="lg" className="text-lg px-8 py-6" onClick={() => setIsRoomGalleryOpen(true)}>
                 Our Room
               </Button>

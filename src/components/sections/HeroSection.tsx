@@ -49,9 +49,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 hero-overlay" />
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="flex items-center justify-center mb-6">
-          <MapPin className="w-5 h-5 mr-2 text-ocean-aqua" />
-          <span className="text-ocean-aqua font-medium">Semporna, Sabah Malaysia</span>
+        <div className="flex items-center justify-center mb-2">
+          {/* <MapPin className="w-5 h-5 mr-2 text-ocean-aqua" /> */}
+          <span className="text-ocean-aqua font-medium">@ Semporna, Sabah Malaysia</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">

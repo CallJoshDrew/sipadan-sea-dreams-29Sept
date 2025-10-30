@@ -59,13 +59,13 @@ const ServicesSection = () => {
     {
       icon: Plane,
       title: "Seamless Journeys",
-      description: "Effortless transfers and expert guidance for perfect marine adventures.",
+      description: "Effortless transfers from airport to your great holiday.",
       image: seamlessJourneysImage,
     },
     {
       icon: Settings,
       title: "Tailored Experiences",
-      description: "Personalized service crafted to exceed your every expectation.",
+      description: "Personalized service crafted to exceed your expectation.",
       image: tailoredExperiencesImage,
     },
   ];
@@ -79,7 +79,7 @@ const ServicesSection = () => {
             <span className="text-ocean-aqua font-medium text-lg">Excellent Services</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Timeless Hospitality</h2>
-          <p className="text-xl text-ocean-aqua max-w-4xl mx-auto leading-relaxed">For over three decades, we have perfected the art of creating seamless vacations. Our commitment to excellence ensures that every moment of your stay is meticulously planned and executed.</p>
+          <p className="text-xl text-ocean-aqua max-w-4xl mx-auto leading-relaxed">We create seamless vacations, with every moment meticulously planned after three decades of perfecting our craft.</p>
         </div>
 
         <div className="flex justify-center">
@@ -114,7 +114,7 @@ const ServicesSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-11/12">
             <div>
               <h3 className="text-3xl font-bold text-white mb-6">Food for All Ages</h3>
-              <p className="text-xl text-ocean-pearl mb-8 leading-relaxed">Where every family finds its feast. Enjoy diverse menus designed for all generations, featuring gourmet delights for adults and chef-prepared favorites for kids.</p>
+              <p className="text-xl text-ocean-pearl mb-8 leading-relaxed">Where every family finds its feast with diverse menus designed for all generations.</p>
               <Button variant="accent" size="lg" className="text-lg px-8 py-6" onClick={() => setIsFoodGalleryOpen(true)}>
                 Our Food
               </Button>
