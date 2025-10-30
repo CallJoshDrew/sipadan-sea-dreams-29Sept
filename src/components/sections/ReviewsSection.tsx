@@ -23,12 +23,12 @@ const ReviewsSection = () => {
       review: "Stayed at the resort for my dive trip. From pick up at the airport till transfer to the airport on the last day, the service was reasonably good from the different staff. The accomodation was tidy and importantly, well maintained. Food spread was good and there were ample places for eating. Nice surroundings. Good place for those who want to lay back and enjoy tranquility.",
       rating: 5,
     },
-    {
-      name: "Cswanston",
-      platform: "TripAdvisor",
-      review: "We had the most amazing 5 days there as a family of 4 with 2 rooms. The place is even more beautiful than the photographs and just strolling along the walkways you see so much wildlife. The staff at the dive centre could not be more helpful if they tried. 3 dives per day are arranged for you and then you can add more or choose to opt out of whichever you don’t want to do and you can always change your mind at any point. There is the chance to play a little bit of influencer-spotting but not as much as one would expect for a place so stunning.",
-      rating: 5,
-    },
+    // {
+    //   name: "Cswanston",
+    //   platform: "TripAdvisor",
+    //   review: "We had the most amazing 5 days there as a family of 4 with 2 rooms. The place is even more beautiful than the photographs and just strolling along the walkways you see so much wildlife. The staff at the dive centre could not be more helpful if they tried. 3 dives per day are arranged for you and then you can add more or choose to opt out of whichever you don’t want to do and you can always change your mind at any point. There is the chance to play a little bit of influencer-spotting but not as much as one would expect for a place so stunning.",
+    //   rating: 5,
+    // },
     {
       name: "Werner G",
       platform: "Agoda.com",
@@ -41,12 +41,12 @@ const ReviewsSection = () => {
       review: "Perfect place to chill out and dive surroundings. Sipadan is accessible. Resort without diving is already fantastic. It is an unbeatable combination with a well run diving outfit. Rates are cheap considering what you get. There is a marine police at one corner of large resort.",
       rating: 5,
     },
-    {
-      name: "mypassionmyobsession",
-      platform: "TripAdvisor",
-      review: "This is heaven on earth. If you're a diver, this is one of the top diving site in the world. Even if you're not, I would highly recommend for you to start taking lesson and get your license. It's worth it! The food is delicious. Bit spicy for those who doesn't take any spice. So be aware. You can buy fresh seafood from Mabul or Semporna and get them to prepare for you for minimal charge. The rest just breathe and enjoy the beauty of your surroundings.",
-      rating: 5,
-    },
+    // {
+    //   name: "mypassionmyobsession",
+    //   platform: "TripAdvisor",
+    //   review: "This is heaven on earth. If you're a diver, this is one of the top diving site in the world. Even if you're not, I would highly recommend for you to start taking lesson and get your license. It's worth it! The food is delicious. Bit spicy for those who doesn't take any spice. So be aware. You can buy fresh seafood from Mabul or Semporna and get them to prepare for you for minimal charge. The rest just breathe and enjoy the beauty of your surroundings.",
+    //   rating: 5,
+    // },
     {
       name: "Ferry R",
       platform: "TripAdvisor",
@@ -71,18 +71,18 @@ const ReviewsSection = () => {
       review: "Good resort for holiday, highly recommend.I had a very good experience in the resort, clean and safe. Overall is good.",
       rating: 5,
     },
-    {
-      name: "Rachel",
-      platform: "Agoda.com",
-      review: "The unique geographical location is unmatched by any other hotel. After enjoying three days of relaxation at sea, time seemed to pass slowly. The room has a terrace where you can soak in the bath, view the sea, and daydream. The signal on the island is weak, only near the front desk is there a relatively good signal and Wi-Fi; other places have no Wi-Fi signal. The room is tidy and clean, with housekeeping coming in daily. The overall facilities are somewhat old, but given that it is in the center of the island, such facilities are understandable. The environment is truly perfect; those who love the sea will adore it.",
-      rating: 4,
-    },
-    {
-      name: "Hafizan",
-      platform: "Agoda.com",
-      review: "This is a resort built on a sand bank, with the sandy beach, on one end of the resort, barely visible during high tide. Besides diving, this is where one spends time doing nothing. Even snorkeling in the designated areas gets you acquainted with sea creatures of various sorts. Amenities are more than adequate. Anyone expecting a luxurious holiday with butler service and Michelin-starred cuisine will be utterly disappointed. Staff are friendly and helpful. It was cloudy during my stay and the promise of a breathtaking sunset remained a dream. The presence of armed forces gives you a sense of ensured security.",
-      rating: 4,
-    },
+    // {
+    //   name: "Rachel",
+    //   platform: "Agoda.com",
+    //   review: "The unique geographical location is unmatched by any other hotel. After enjoying three days of relaxation at sea, time seemed to pass slowly. The room has a terrace where you can soak in the bath, view the sea, and daydream. The signal on the island is weak, only near the front desk is there a relatively good signal and Wi-Fi; other places have no Wi-Fi signal. The room is tidy and clean, with housekeeping coming in daily. The overall facilities are somewhat old, but given that it is in the center of the island, such facilities are understandable. The environment is truly perfect; those who love the sea will adore it.",
+    //   rating: 4,
+    // },
+    // {
+    //   name: "Hafizan",
+    //   platform: "Agoda.com",
+    //   review: "This is a resort built on a sand bank, with the sandy beach, on one end of the resort, barely visible during high tide. Besides diving, this is where one spends time doing nothing. Even snorkeling in the designated areas gets you acquainted with sea creatures of various sorts. Amenities are more than adequate. Anyone expecting a luxurious holiday with butler service and Michelin-starred cuisine will be utterly disappointed. Staff are friendly and helpful. It was cloudy during my stay and the promise of a breathtaking sunset remained a dream. The presence of armed forces gives you a sense of ensured security.",
+    //   rating: 4,
+    // },
     {
       name: "Mohd Lutfi",
       platform: "Google Review",
