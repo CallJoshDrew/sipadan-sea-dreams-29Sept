@@ -11,18 +11,18 @@ const ReviewsSection = () => {
       review: "This is our second visit and we love everything about the resort. Staff is great, rooms are really nice and the tub is great for warming up after a dive. The dive center is top notch with great guides (good evening karaoke too!) Food is fine, but could improve.",
       rating: 4,
     },
-    {
-      name: "Rebecca K",
-      platform: "TripAdvisor",
-      review: "My expectations were low when booking this due to previous average reviews. But I was pleasantly surprised. This place is stunning! It looks like it may have had a recent reno as well? The food was great. The people are great. The diving is great. No complaints here at all! We saw turtles around the overwater villas everyday as well as so many schools of fish. Highly recommend this place!",
-      rating: 5,
-    },
-    {
-      name: "Chinwong69",
-      platform: "TripAdvisor",
-      review: "Stayed at the resort for my dive trip. From pick up at the airport till transfer to the airport on the last day, the service was reasonably good from the different staff. The accomodation was tidy and importantly, well maintained. Food spread was good and there were ample places for eating. Nice surroundings. Good place for those who want to lay back and enjoy tranquility.",
-      rating: 5,
-    },
+    // {
+    //   name: "Rebecca K",
+    //   platform: "TripAdvisor",
+    //   review: "My expectations were low when booking this due to previous average reviews. But I was pleasantly surprised. This place is stunning! It looks like it may have had a recent reno as well? The food was great. The people are great. The diving is great. No complaints here at all! We saw turtles around the overwater villas everyday as well as so many schools of fish. Highly recommend this place!",
+    //   rating: 5,
+    // },
+    // {
+    //   name: "Chinwong69",
+    //   platform: "TripAdvisor",
+    //   review: "Stayed at the resort for my dive trip. From pick up at the airport till transfer to the airport on the last day, the service was reasonably good from the different staff. The accomodation was tidy and importantly, well maintained. Food spread was good and there were ample places for eating. Nice surroundings. Good place for those who want to lay back and enjoy tranquility.",
+    //   rating: 5,
+    // },
     // {
     //   name: "Cswanston",
     //   platform: "TripAdvisor",
@@ -89,12 +89,12 @@ const ReviewsSection = () => {
       review: "Room - spacious., have 1 queen size & 1 single for std room Food - a lots. One of the chalet that provide lots of food. View - masha ALLAH... So beautiful Safety - have esscom that patrol daily basis of every chalet Looking forward to come again",
       rating: 5,
     },
-    {
-      name: "KSPG",
-      platform: "Google Review",
-      review: "Nice environment, extremely clean emeralds colour sea water, though the sandy beach is small but is white beach and good for photo taking. Consider big compound area for visitors to walk around, no daily tourists visit which keep the area with better privacy. Food is good and well present,  restaurant is also very clean and you can choose open restaurant to enjoy the cool breeze.",
-      rating: 5,
-    },
+    // {
+    //   name: "KSPG",
+    //   platform: "Google Review",
+    //   review: "Nice environment, extremely clean emeralds colour sea water, though the sandy beach is small but is white beach and good for photo taking. Consider big compound area for visitors to walk around, no daily tourists visit which keep the area with better privacy. Food is good and well present,  restaurant is also very clean and you can choose open restaurant to enjoy the cool breeze.",
+    //   rating: 5,
+    // },
   ];
 
   return (
@@ -109,7 +109,7 @@ const ReviewsSection = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">See why our guests consistently share outstanding feedback across all platforms.</p>
         </div>
 
-        <AutoCarousel autoPlayInterval={4000}>
+        <AutoCarousel autoPlayInterval={3000} showDots={false}>
           {reviews.map((review, index) => (
             <div key={index} className="px-4">
               <div className="bg-white rounded-2xl p-6 elegant-shadow smooth-transition hover:scale-105 hover:glow-effect max-w-2xl mx-auto">
