@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactDialog from "./ContactDialog";
-import kapalaiLogo from "@/assets/logo/SKDR_Transparent_HR.png";
+import kapalaiLogo from "@/assets/logo/SKDR_Transparent_Black.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <h1 className="text-xl font-bold text-ocean-deep" style={{ lineHeight: "1.1" }}>
               <span>Sipadan Kapalai</span>
               <br />
@@ -41,14 +41,14 @@ const Navigation = () => {
                 Dive Resort
               </span>
             </h1>
-          </div>
-          {/* <div className="flex items-center">
+          </div> */}
+          <div className="flex items-center">
             <img
               src={kapalaiLogo} 
               alt="Sipadan Kapalai Dive Resort Logo"
-              className="h-3 w-auto" // adjust size as needed
+              className="h-10 md:h-12 w-auto" // adjust size as needed
             />
-          </div> */}
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
