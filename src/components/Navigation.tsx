@@ -2,15 +2,17 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactDialog from "./ContactDialog";
+import kapalaiLogo from "@/assets/logo/SKDR_Transparent_HR.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
+  
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 100;
-      setIsVisible(scrolled);
+      // setIsVisible(scrolled);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,7 +29,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-ocean-pearl/20 shadow-lg z-50 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
+    <nav className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-ocean-pearl/20 shadow-lg z-50 transition-transform duration-300  "translate-y-0"`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -40,6 +42,13 @@ const Navigation = () => {
               </span>
             </h1>
           </div>
+          {/* <div className="flex items-center">
+            <img
+              src={kapalaiLogo} 
+              alt="Sipadan Kapalai Dive Resort Logo"
+              className="h-3 w-auto" // adjust size as needed
+            />
+          </div> */}
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
@@ -62,7 +71,7 @@ const Navigation = () => {
             </ContactDialog> */}
             <div className="flex justify-center">
               <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
-                <Button variant="book-now">Book Now</Button>
+                <Button variant="book-now">Enquiry</Button>
               </a>
             </div>
           </div>

@@ -18,45 +18,45 @@ const Index = () => {
   const [scrollLocked, setScrollLocked] = useState(true);
 
   // Lock/unlock scroll based on scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      if (heroRef.current) {
-        const rect = heroRef.current.getBoundingClientRect();
-        // If hero section is not visible, unlock scroll
-        if (rect.bottom <= 0 || rect.top >= window.innerHeight) {
-          setScrollLocked(false);
-        }
-      }
-    };
-    if (scrollLocked) {
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-      document.documentElement.style.overflow = "";
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      document.body.style.overflow = "";
-      document.documentElement.style.overflow = "";
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrollLocked]);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (heroRef.current) {
+  //       const rect = heroRef.current.getBoundingClientRect();
+  //       // If hero section is not visible, unlock scroll
+  //       if (rect.bottom <= 0 || rect.top >= window.innerHeight) {
+  //         setScrollLocked(false);
+  //       }
+  //     }
+  //   };
+  //   if (scrollLocked) {
+  //     document.body.style.overflow = "hidden";
+  //     document.documentElement.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "";
+  //     document.documentElement.style.overflow = "";
+  //   }
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //     document.documentElement.style.overflow = "";
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [scrollLocked]);
 
   // Listen for custom event to unlock scroll (e.g., from HeroSection)
-  useEffect(() => {
-    const handleUnlock = () => setScrollLocked(false);
-    window.addEventListener("unlockScroll", handleUnlock);
-    return () => window.removeEventListener("unlockScroll", handleUnlock);
-  }, []);
+  // useEffect(() => {
+  //   const handleUnlock = () => setScrollLocked(false);
+  //   window.addEventListener("unlockScroll", handleUnlock);
+  //   return () => window.removeEventListener("unlockScroll", handleUnlock);
+  // }, []);
 
-  useEffect(() => {
-    const handlePlayAudio = () => {
-      play();
-    };
-    window.addEventListener("playAudio", handlePlayAudio);
-    return () => window.removeEventListener("playAudio", handlePlayAudio);
-  }, [play]);
+  // useEffect(() => {
+  //   const handlePlayAudio = () => {
+  //     play();
+  //   };
+  //   window.addEventListener("playAudio", handlePlayAudio);
+  //   return () => window.removeEventListener("playAudio", handlePlayAudio);
+  // }, [play]);
 
   return (
     <div className="min-h-screen">
@@ -84,7 +84,7 @@ const Index = () => {
         <ReviewsSection />
       </section>
       <Footer />
-      <SoundControl isPlaying={isPlaying} onToggle={toggle} />
+      {/* <SoundControl isPlaying={isPlaying} onToggle={toggle} /> */}
     </div>
   );
 };

@@ -33,10 +33,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section ref={ref} className="h-auto bg-background overflow-x-hidden">
       {" "}
       {/* Background Image */}
-      <div
+      {/* <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(${heroImage})`,
@@ -44,24 +44,32 @@ const HeroSection = () => {
           transform: isVisible ? "scale(1.3)" : "scale(1.0)",
           transition: isVisible ? "transform 10s ease-out" : "none",
         }}
-      />
+      /> */}
       {/* Overlay */}
-      <div className="absolute inset-0 hero-overlay" />
+      {/* <div className="absolute inset-0 hero-overlay" /> */}
+      {/* <div className="min-h-screen bg-background overflow-x-hidden"> */}
+
+      {/* Hero Section */}
+      <section id="hero" className="relative h-[28vh] mt-16 md:h-[90vh] overflow-hidden bg-gradient-to-b from-background to-secondary/20">
+        <div className="relative z-10 w-full h-full">
+          <iframe src="https://www.youtube.com/embed/lyWHJcma6VY?si=DLNcgphhFewi3Ixp&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&vq=hd1080" className="w-full h-full object-cover" allow="autoplay; encrypted-media" title="Pearl Island Video" />
+        </div>
+      </section>
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="flex items-center justify-center mb-2">
+      {/* <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        <div className="flex items-center justify-center mb-2"> */}
           {/* <MapPin className="w-5 h-5 mr-2 text-ocean-aqua" /> */}
-          <span className="text-ocean-aqua font-medium">@ Semporna, Sabah Malaysia</span>
+          {/* <span className="text-ocean-aqua font-medium">@ Semporna, Sabah Malaysia</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Sipadan Kapalai
           <br />
           <span className="text-ocean-aqua">Dive Resort</span>
-        </h1>
+        </h1> */}
 
         {/* Fixed: Set a fixed height that accommodates the maximum text lines */}
-        <div className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-ocean-pearl min-h-[6rem] md:min-h-[5rem] flex items-center justify-center">{displayText}</div>
+        {/* <div className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-ocean-pearl min-h-[6rem] md:min-h-[5rem] flex items-center justify-center">{displayText}</div>
 
         <div className="flex justify-center items-center opacity-0 animate-fade-in delay-1500">
           <Button variant="accent" size="lg" className="text-lg px-8 py-6" onClick={scrollToDiveExpert}>
@@ -69,7 +77,7 @@ const HeroSection = () => {
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -149,7 +149,7 @@ const ReviewsSection = () => {
                 </p>
                 <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
                   <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-                    Booking
+                    Enquiry
                   </Button>
                 </a>
               </div>
