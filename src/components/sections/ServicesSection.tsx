@@ -51,7 +51,7 @@ const ServicesSection = () => {
     { image: bbqImage, title: "BBQ Night" },
     { image: buffetStyleImage, title: "Buffet Style" },
     { image: familyDiningImage, title: "Family Dinner" },
-    { image: kapalaiChiefImage, title: "Kapalai Chiefs" },
+    { image: kapalaiChiefImage, title: "Kapalai Chefs" },
     { image: serviceStaffImage, title: "Service Staff" },
   ];
 

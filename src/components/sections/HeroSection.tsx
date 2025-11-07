@@ -50,7 +50,7 @@ const HeroSection = () => {
       {/* <div className="min-h-screen bg-background overflow-x-hidden"> */}
 
       {/* Hero Section */}
-      <section id="hero" className="relative h-[28vh] mt-16 md:h-[90vh] overflow-hidden bg-gradient-to-b from-background to-secondary/20">
+      <section id="hero" className="relative h-[28vh] mt-14 md:h-[90vh] overflow-hidden bg-gradient-to-b from-background to-secondary/20">
         <div className="relative z-10 w-full h-full">
           <iframe src="https://www.youtube.com/embed/lyWHJcma6VY?si=DLNcgphhFewi3Ixp&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&vq=hd1080" className="w-full h-full object-cover" allow="autoplay; encrypted-media" title="Pearl Island Video" />
         </div>

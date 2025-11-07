@@ -4,7 +4,7 @@ import ActivityGallery from "@/components/ActivityGallery";
 import underwaterImage from "@/assets/underwater-diving.jpg";
 import kayakingImage from "@/assets/activities/kayaking1.jpg";
 import snorkelingImage from "@/assets/activities/snorkeling.jpg";
-import cyclingImage from "@/assets/cycling-activity.jpg";
+import cyclingImage from "@/assets/activities/cycling1.png";
 import natureImage from "@/assets/activities/nature0a.png";
 
 const ActivitiesSection = () => {

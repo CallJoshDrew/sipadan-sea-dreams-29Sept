@@ -29,9 +29,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-ocean-pearl/20 shadow-lg z-50 transition-transform duration-300  "translate-y-0"`}>
+    <nav className={`fixed top-0 w-full h-14 bg-white/95 backdrop-blur-sm border-b border-ocean-pearl/20 shadow-lg z-50 transition-transform duration-300  "translate-y-0"`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
           {/* <div className="flex-shrink-0">
             <h1 className="text-xl font-bold text-ocean-deep" style={{ lineHeight: "1.1" }}>
@@ -71,7 +71,7 @@ const Navigation = () => {
             </ContactDialog> */}
             <div className="flex justify-center">
               <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
-                <Button variant="book-now">Enquiry</Button>
+                <Button variant="book-now" className="h-8 rounded-sm">Enquiry</Button>
               </a>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Navigation = () => {
                 </ContactDialog> */}
                 <div className="flex">
                   <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
-                    <Button variant="book-now">Book Now</Button>
+                    <Button variant="book-now">Enquiry</Button>
                   </a>
                 </div>
               </div>
