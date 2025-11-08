@@ -42,7 +42,7 @@ const Navigation = () => {
             </h1>
           </div> */}
           <div className="flex items-center">
-             <a key="Home" href="#home" className="text-ocean-deep hover:text-ocean-primary px-3 py-2 text-sm font-medium smooth-transition whitespace-nowrap">                
+            <a key="Home" href="#home" className="text-ocean-deep hover:text-ocean-primary px-3 py-2 text-sm font-medium smooth-transition whitespace-nowrap">
               <img
                 src={kapalaiLogo}
                 alt="Sipadan Kapalai Dive Resort Logo"
@@ -65,18 +65,18 @@ const Navigation = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             {/* Temporary Disable for now */}
-            {/* <ContactDialog>
-              <button className="text-ocean-deep hover:text-ocean-primary px-3 py-2 text-sm font-medium smooth-transition">
+            <ContactDialog>
+              <Button variant="book-now" className="h-8 rounded-sm">
                 Enquiry
-              </button>
-            </ContactDialog> */}
-            <div className="flex justify-center">
+              </Button>
+            </ContactDialog>
+            {/* <div className="flex justify-center">
               <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
                 <Button variant="book-now" className="h-8 rounded-sm">
                   Enquiry
                 </Button>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile menu button */}
@@ -98,16 +98,16 @@ const Navigation = () => {
               ))}
               <div className="px-3 py-2 space-y-2">
                 {/* Temporary disabled for now */}
-                {/* <ContactDialog>
-                  <button className="w-full text-left text-ocean-deep hover:text-ocean-primary px-3 py-2 text-base font-medium">
+                <ContactDialog>
+                  <Button variant="book-now" className="h-8 rounded-sm">
                     Enquiry
-                  </button>
-                </ContactDialog> */}
-                <div className="flex">
+                  </Button>
+                </ContactDialog>
+                {/* <div className="flex">
                   <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
                     <Button variant="book-now">Enquiry</Button>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
