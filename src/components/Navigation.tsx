@@ -8,7 +8,6 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   // const [isVisible, setIsVisible] = useState(false);
 
-  
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 100;
@@ -20,7 +19,7 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#home" },
+    { name: "INBAYU", href: "https://inbayu.vercel.app" },
     { name: "Diving", href: "#diving" },
     { name: "Holidays", href: "#holidays" },
     { name: "Services", href: "#services" },
@@ -43,11 +42,13 @@ const Navigation = () => {
             </h1>
           </div> */}
           <div className="flex items-center">
-            <img
-              src={kapalaiLogo} 
-              alt="Sipadan Kapalai Dive Resort Logo"
-              className="h-10 md:h-12 w-auto" // adjust size as needed
-            />
+             <a key="Home" href="#home" className="text-ocean-deep hover:text-ocean-primary px-3 py-2 text-sm font-medium smooth-transition whitespace-nowrap">                
+              <img
+                src={kapalaiLogo}
+                alt="Sipadan Kapalai Dive Resort Logo"
+                className="h-10 md:h-12 w-auto" // adjust size as needed
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -71,7 +72,9 @@ const Navigation = () => {
             </ContactDialog> */}
             <div className="flex justify-center">
               <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
-                <Button variant="book-now" className="h-8 rounded-sm">Enquiry</Button>
+                <Button variant="book-now" className="h-8 rounded-sm">
+                  Enquiry
+                </Button>
               </a>
             </div>
           </div>
