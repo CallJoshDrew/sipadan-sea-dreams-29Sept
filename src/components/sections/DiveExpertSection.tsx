@@ -41,7 +41,7 @@ const DiveExpertSection = () => {
     nextSlide();
 
     // Start new interval
-    const newInterval = setInterval(nextSlide, 3000);
+    const newInterval = setInterval(nextSlide, 2000);
     setIntervalId(newInterval);
   }, [nextSlide, intervalId]);
 
@@ -50,7 +50,7 @@ const DiveExpertSection = () => {
   }, [slides.length]);
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
+    const interval = setInterval(nextSlide, 2000);
     setIntervalId(interval);
     return () => clearInterval(interval);
   }, [nextSlide]);
@@ -82,9 +82,9 @@ const DiveExpertSection = () => {
         </h2>
 
         <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto px-4 md:px-32 leading-relaxed">Every dive is a journey of discovery, where the depths reveal their most guarded secrets.</p>
-        <Button variant="accent" size="lg" className="text-lg px-8 py-6" onClick={handleManualNext}>
+        {/* <Button variant="accent" size="lg" className="text-lg px-8 py-6" onClick={handleManualNext}>
           Next
-        </Button>
+        </Button> */}
       </div>
 
       {/* Animated Progress Bar */}
@@ -93,7 +93,7 @@ const DiveExpertSection = () => {
           key={currentSlide} // Key to restart animation on slide change
           className="h-full bg-accent animate-[progress-fill_3s_linear_forwards] origin-left"
           style={{
-            animation: `progress-fill 3s linear forwards`,
+            animation: `progress-fill 2s linear forwards`,
             width: "0%",
           }}
         />

@@ -146,7 +146,13 @@ const FacilitiesSection = () => {
               </Button>
             </div>
             <div className="relative">
-              <Carousel className="w-full">
+              <Carousel
+                className="w-full"
+                autoplay={true}
+                autoplayInterval={2000} // 2 seconds
+                opts={{
+                  loop: true,
+                }}>
                 <CarouselContent>
                   {roomImages.map((room, index) => (
                     <CarouselItem key={index}>

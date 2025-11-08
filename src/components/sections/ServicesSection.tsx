@@ -120,7 +120,13 @@ const ServicesSection = () => {
               </Button>
             </div>
             <div className="relative">
-              <Carousel className="w-full">
+              <Carousel
+                className="w-full"
+                autoplay={true}
+                autoplayInterval={2000} // 2 seconds
+                opts={{
+                  loop: true,
+                }}>
                 <CarouselContent>
                   {foodImages.map((food, index) => (
                     <CarouselItem key={index}>
