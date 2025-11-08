@@ -108,9 +108,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-center items-center">
-            <img src={inbayuRightReserved} alt="an INBAYU Collection logo" className="h-4 md:h-6 object-cover" />
-            {/* <p className="text-gray-400 text-sm">© 2025 An INBAYU Collection. All rights reserved.</p> */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+            <p className="text-gray-400 text-xs">© 2025</p>
+            <img src={inbayuRightReserved} alt="an INBAYU Collection logo" className="h-4 md:h-4 object-cover" />
             {/* Temporary Disable this for now */}
             {/* <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-ocean-pearl text-sm smooth-transition">
