@@ -2,6 +2,7 @@ import { Star, Quote, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AutoCarousel from "@/components/AutoCarousel";
 import teamStaffImage from "@/assets/kapalaiReceptionisnts.png";
+import ContactDialog from "@/components/ContactDialog";
 
 const ReviewsSection = () => {
   const reviews = [
@@ -147,11 +148,16 @@ const ReviewsSection = () => {
                 <p className="text-xl text-ocean-deep mb-8 leading-relaxed">
                   Discover <span className="font-bold">Sipadan Kapalai Dive Resort in Semporna, Sabah, Malaysia</span>—a legendary destination above crystal-clear waters, offering <span className="font-bold">world-class diving</span> and <span className="font-bold">three decades of iconic hospitality</span>. Book your unforgettable island escape today!
                 </p>
-                <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
+                <ContactDialog>
                   <Button variant="accent" size="lg" className="text-lg px-8 py-6">
                     Enquiry
                   </Button>
-                </a>
+                </ContactDialog>
+                {/* <a href="https://dive-malaysia.com/enquiries/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="accent" size="lg" className="text-lg px-8 py-6">
+                    Enquiry
+                  </Button>
+                </a> */}
               </div>
             </div>
           </div>

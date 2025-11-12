@@ -17,7 +17,60 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-32">
           {/* Contact Info */}
-          <div className="space-y-4">
+            {/* Sandakan Office */}
+              <div className="space-y-4 mx-4 md:mx-0">
+                <h4 className="text-lg font-semibold text-white">Sandakan Office</h4>
+                <a href="https://maps.app.goo.gl/pkaqfYKCzzatt6kC9" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline transition-all duration-300 hover:scale-105">
+                  {/* <MapPin size={20} className="text-white shrink-0" /> */}
+                  <span>Ground Floor, Lot 38 &amp; 39, Block C, Bandar Tyng, Mile 5, North Road, PPM 255 Elopura, 90000 Sandakan, Sabah, Malaysia.</span>
+                </a>
+                <div className="flex items-start gap-2">
+                  {/* Phone Icon Column - Centered */}
+                  {/* <div className="flex justify-center items-center h-6 shrink-0">
+                    <Phone size={18} className="text-white mt-1" />
+                  </div> */}
+
+                  {/* Phone Numbers Column - Stacked */}
+                  <div className="flex flex-col gap-2">
+                    <a href="tel:+6089673999" className="hover:underline transition-all duration-300 hover:scale-105">
+                      (+60) 89-673999
+                    </a>
+                    <a href="tel:+6089674999" className="hover:underline transition-all duration-300 hover:scale-105">
+                      (+60) 89-674999
+                    </a>
+                    <a href="tel:+6089675999" className="hover:underline transition-all duration-300 hover:scale-105">
+                      (+60) 89-675999
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <a href="mailto:mail@sipadan-kapalai.com" className="flex items-center gap-2 hover:underline transition-all duration-300 hover:scale-105">
+                    {/* <Mail size={18} className="text-white shrink-0 mt-0.5" /> */}
+                    <span>mail@sipadan-kapalai.com</span>
+                  </a>
+                </div>
+              </div>
+            {/* Tawau Office */}
+              <div className="space-y-4 mx-4 md:mx-0">
+                <h4 className="text-lg font-semibold text-ocean-pearl">Tawau Office</h4>
+                <a href="https://maps.app.goo.gl/7mouAogF627ktS2H7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline transition-all duration-300 hover:scale-105">
+                  {/* <MapPin size={20} className="text-white shrink-0" /> */}
+                  <span>1st Floor, No. 484, Block P, Bandar Sabindo, P.O Box 61120, 91021 Tawau, Sabah, Malaysia.</span>
+                </a>
+                <div className="flex items-center gap-2">
+                  {/* <Phone size={18} className="text-white shrink-0" /> */}
+                  <a href="tel:+6089765200" className="hover:underline transition-all duration-300 hover:scale-105">
+                    (+60) 89-765200
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <a href="mailto:mail@sipadan-kapalai.com" className="flex items-center gap-2 hover:underline transition-all duration-300 hover:scale-105">
+                    {/* <Mail size={18} className="text-white shrink-0 mt-0.5" /> */}
+                    <span>mail@sipadan-kapalai.com</span>
+                  </a>
+                </div>
+              </div>
+          {/* <div className="space-y-4">
             <h4 className="text-lg font-semibold text-ocean-pearl">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
@@ -36,9 +89,9 @@ const Footer = () => {
                 <p className="text-gray-300">mail@sipadan-kapalai.com</p>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Follow Us */}
-          <div className="space-y-4">
+          <div className="space-y-4 mx-4 md:mx-0">
             <h3 className="text-lg font-bold text-ocean-pearl">Follow Us</h3>
             <p className="text-gray-300 leading-relaxed">Experience the ultimate underwater paradise in the heart of the Semporna, Sabah.</p>
             <div className="flex space-x-5 items-center">
@@ -73,7 +126,7 @@ const Footer = () => {
           </div>
 
           {/* Certifications */}
-          <div className="space-y-4">
+          <div className="space-y-4 mx-4 md:mx-0">
             <h4 className="text-lg font-semibold text-ocean-pearl">Certifications</h4>
             <div className="space-y-2">
               <p className="text-gray-300 text-sm">PADI Dive Resort</p>
@@ -86,7 +139,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h4 className="text-lg font-semibold text-ocean-pearl">Quick Links</h4>
             <div className="space-y-2">
               <a href="#diving" className="block text-gray-300 hover:text-ocean-pearl smooth-transition">
@@ -105,7 +158,7 @@ const Footer = () => {
                 Reviews
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex md:flex-row justify-center items-center gap-2">
