@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactDialog from "./ContactDialog";
-import kapalaiLogo from "@/assets/logo/SKDR_Transparent_Black.png";
+import kapalaiLogo from "@/assets/logo/SKDR_Transparent_BlackFont.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +46,7 @@ const Navigation = () => {
               <img
                 src={kapalaiLogo}
                 alt="Sipadan Kapalai Dive Resort Logo"
-                className="h-10 md:h-12 w-auto" // adjust size as needed
+                className="h-3 w-auto" // adjust size as needed
               />
             </a>
           </div>
