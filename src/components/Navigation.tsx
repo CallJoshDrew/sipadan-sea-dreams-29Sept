@@ -19,7 +19,7 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "INBAYU", href: "https://inbayuresorts.com" },
+    { name: "INBAYU", href: "https://www.inbayuresorts.com" },
     { name: "Diving", href: "#diving" },
     { name: "Holidays", href: "#holidays" },
     { name: "Services", href: "#services" },
