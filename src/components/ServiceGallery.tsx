@@ -67,6 +67,8 @@ const ServiceGallery = ({ service, isOpen, onClose }: ServiceGalleryProps) => {
   return (
     <div className="fixed inset-0 z-50 bg-ocean-deep/95 backdrop-blur-sm">
       <div className="flex items-center justify-center min-h-screen p-4">
+        {/* Constrain overall modal to viewport but do NOT enable internal scrolling.
+            Main image will scale down to fit remaining space so no scroll is needed. */}
         <div className="relative w-full max-w-6xl mx-auto">
           {/* Close button */}
           <button onClick={onClose} className="absolute top-4 right-4 z-10 p-2 bg-white/20 hover:bg-white/30 rounded-full text-white smooth-transition">
@@ -74,27 +76,41 @@ const ServiceGallery = ({ service, isOpen, onClose }: ServiceGalleryProps) => {
           </button>
 
           {/* Gallery header */}
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{service}</h2>
-            <p className="text-ocean-pearl text-lg">
+          <div className="text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-1">{service}</h2>
+            <p className="text-ocean-pearl text-sm md:text-lg">
               {currentImageIndex + 1} of {images.length}
             </p>
           </div>
 
-          {/* Main image display */}
-          <div className="relative mb-8">
-            <img src={images[currentImageIndex].src} alt={images[currentImageIndex].alt} className="w-full h-full md:h-[600px] object-cover rounded-lg shadow-2xl" />
+          {/* Main image display
+              - Use object-contain and cap its max-height so header + thumbnails always fit within viewport
+              - Adjust the calc() value if you change header/thumbnail sizes */}
+          <div className="relative mb-4">
+            <img
+              src={images[currentImageIndex].src}
+              alt={images[currentImageIndex].alt}
+              className="w-full h-auto object-contain rounded-lg shadow-2xl"
+              style={{ maxHeight: "calc(100vh - 220px)" }} // leaves ~220px for header, captions, thumbnails, and margins
+            />
 
             {/* Image title */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ocean-deep/80 to-transparent p-6">
-              <h3 className="text-xl font-bold text-white mb-1">{images[currentImageIndex].title}</h3>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ocean-deep/80 to-transparent p-4">
+              <h3 className="text-lg md:text-xl font-semibold text-white mb-0 text-center">
+                {images[currentImageIndex].title}
+              </h3>
             </div>
           </div>
 
-          {/* Thumbnail navigation */}
-          <div className="flex justify-center gap-2 sm:gap-4 overflow-x-auto pb-2 px-4">
+          {/* Thumbnail navigation (horizontal scroll if many) */}
+          <div className="flex justify-center gap-2 sm:gap-4 overflow-x-auto pb-2 px-1">
             {images.map((image, index) => (
-              <button key={index} onClick={() => setCurrentImageIndex(index)} className={`flex-shrink-0 w-16 h-12 sm:w-20 sm:h-16 md:w-24 md:h-20 rounded-sm overflow-hidden border-2 smooth-transition ${index === currentImageIndex ? "border-ocean-light" : "border-white/30 hover:border-white/60"}`}>
+              <button
+                key={index}
+                onClick={() => setCurrentImageIndex(index)}
+                className={`flex-shrink-0 w-16 h-12 sm:w-20 sm:h-16 md:w-24 md:h-20 rounded-sm overflow-hidden border-2 smooth-transition ${index === currentImageIndex ? "border-ocean-light" : "border-white/30 hover:border-white/60"}`}
+                aria-label={`View ${image.title}`}
+              >
                 <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
               </button>
             ))}
