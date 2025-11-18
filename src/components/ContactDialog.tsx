@@ -63,8 +63,8 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validation for required fields
-    if (!formData.fullName || !formData.email || !formData.contactNumber || !formData.nationality || !formData.arrivalDate || !formData.departureDate || !formData.numberOfRooms || !formData.numberOfDivers || !formData.numberOfNonDivers) {
+    // Validation for required fields (arrivalDate is now optional)
+    if (!formData.fullName || !formData.email || !formData.contactNumber || !formData.nationality || !formData.departureDate || !formData.numberOfRooms || !formData.numberOfDivers || !formData.numberOfNonDivers) {
       toast({
         title: "Please fill in all required fields",
         variant: "destructive",
@@ -72,8 +72,8 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
       return;
     }
 
-    // Check if departure date is after arrival date
-    if (formData.departureDate <= formData.arrivalDate) {
+    // Check if departure date is after arrival date only when both provided
+    if (formData.arrivalDate && formData.departureDate && formData.departureDate <= formData.arrivalDate) {
       toast({
         title: "Departure date must be after arrival date",
         variant: "destructive",
@@ -82,6 +82,9 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
     }
 
     // Create email content for mailto:
+    const arrivalText = formData.arrivalDate ? format(formData.arrivalDate, "PPPP") : "Not provided";
+    const departureText = formData.departureDate ? format(formData.departureDate, "PPPP") : "Not provided";
+
     const subject = `Booking Inquiry from ${formData.fullName}`;
     const emailBody = `
 BOOKING INQUIRY - Sipadan Kapalai Dive Resort
@@ -94,8 +97,8 @@ PERSONAL INFORMATION:
 • Contact Number: ${formData.countryCode} ${formData.contactNumber}
 
 BOOKING DETAILS:
-• Arrival Date: ${format(formData.arrivalDate, "PPPP")}
-• Departure Date: ${format(formData.departureDate, "PPPP")}
+• Arrival Date: ${arrivalText}
+• Departure Date: ${departureText}
 • Number of Rooms: ${formData.numberOfRooms}
 • Number of Divers: ${formData.numberOfDivers}
 • Number of Non-divers: ${formData.numberOfNonDivers}
@@ -249,7 +252,7 @@ This inquiry was submitted via the website on ${new Date().toLocaleString()}
             {/* Arrival and Departure Dates */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label>Arrival Date *</Label>
+                <Label>Arrival Date</Label> {/* removed required asterisk */}
                 <Popover>
                   <PopoverTrigger asChild>
                     <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !formData.arrivalDate && "text-muted-foreground")}>
