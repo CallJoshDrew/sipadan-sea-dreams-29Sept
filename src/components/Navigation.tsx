@@ -3,11 +3,19 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactDialog from "./ContactDialog";
 import kapalaiLogo from "@/assets/logo/SKDR_Transparent_BlackFont.png";
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   // const [isVisible, setIsVisible] = useState(false);
+  const { t, i18n } = useTranslation();
+   const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'zh' : 'en';
+    i18n.changeLanguage(newLang);
+  };
 
+  const isEnglish = i18n.language === 'en';
+  
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 100;
@@ -20,11 +28,11 @@ const Navigation = () => {
 
   const navItems = [
     { name: "INBAYU", href: "https://www.inbayuresorts.com" },
-    { name: "Diving", href: "#diving" },
-    { name: "Holidays", href: "#holidays" },
-    { name: "Services", href: "#services" },
-    { name: "Facilities", href: "#facilities" },
-    { name: "Reviews", href: "#reviews" },
+    { name: t("nav.diving"), href: "#diving" },
+    { name: t("nav.holidays"), href: "#holidays" },
+    { name: t("nav.services"), href: "#services" },
+    { name: t("nav.facilities"), href: "#facilities" },
+    { name: t("nav.reviews"), href: "#reviews" },
   ];
 
   return (
@@ -65,9 +73,12 @@ const Navigation = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             {/* Temporary Disable for now */}
+            <button onClick={toggleLanguage} className="px-4 py-2">
+              {isEnglish ? "ENG" : "中文"}
+            </button>
             <ContactDialog>
               <Button variant="book-now" className="h-8 rounded-sm">
-                Enquiry
+                {t("nav.enquiry")}
               </Button>
             </ContactDialog>
             {/* <div className="flex justify-center">
@@ -80,7 +91,10 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex">
+            <button onClick={toggleLanguage} className="py-2 px-4 bg-[#006e8f] text-xs text-white rounded-sm">
+              {isEnglish ? "ENG" : "中文"}
+            </button>
             <button onClick={() => setIsOpen(!isOpen)} className="text-ocean-deep hover:text-ocean-primary p-2">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -100,7 +114,7 @@ const Navigation = () => {
                 {/* Temporary disabled for now */}
                 <ContactDialog>
                   <Button variant="book-now" className="h-8 rounded-sm">
-                    Enquiry
+                    {t("nav.enquiry")}
                   </Button>
                 </ContactDialog>
                 {/* <div className="flex">
