@@ -58,6 +58,12 @@ const Footer = () => {
               <a href="tel:+60178991700" className="hover:underline transition-all duration-300 hover:scale-105">
                   (+60) 17-899 1700 (Veronica)
                 </a>
+                 <a href="tel:+60178993683" className="hover:underline transition-all duration-300 hover:scale-105">
+                  (+60) 17-899 3683
+                </a>
+                 <a href="tel:+60178995300" className="hover:underline transition-all duration-300 hover:scale-105">
+                  (+60) 17-899 5300
+                </a>
             </div>
             <div className="flex items-center gap-2">
               <a href="mailto:mail@sipadan-kapalai.com" className="flex items-center gap-2 hover:underline transition-all duration-300 hover:scale-105">
