@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Waves } from "lucide-react";
 import ActivityGallery from "@/components/ActivityGallery";
-import underwaterImage from "@/assets/underwater-diving.jpg";
+import underwaterImage from "@/assets/dive-expert/underwater-diving.jpg";
 import kayakingImage from "@/assets/activities/kayaking1.jpg";
 import snorkelingImage from "@/assets/activities/snorkeling.jpg";
 import cyclingImage from "@/assets/activities/cycling1.png";

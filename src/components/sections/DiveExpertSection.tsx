@@ -1,22 +1,26 @@
 import { useState, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Waves } from "lucide-react";
-import underwaterImage from "@/assets/underwater-diving.jpg";
-import marineLifeImage from "@/assets/marine-life.jpg";
-import couplesUnderwaterImage from "@/assets/couples-underwater-exploration.jpg";
+import underwaterImage from "@/assets/dive-expert/underwater-diving.jpg";
+import marineLifeImage from "@/assets/dive-expert/marine-life.jpg";
+import couplesUnderwaterImage from "@/assets/dive-expert/couples-underwater-exploration.jpg";
+import barracudaTornadoImage from "@/assets/dive-expert/barracuda_tornado.png";
 import { useTranslation } from "react-i18next";
 
 const DiveExpertSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
+  const [intervalId, setIntervalId] = useState<number | null>(null);
   const { t } = useTranslation();
 
   // static images in the same order as translations
-  const images = [underwaterImage, marineLifeImage, couplesUnderwaterImage];
+  const images = [underwaterImage, marineLifeImage, couplesUnderwaterImage, barracudaTornadoImage];
 
   // load slide content from translations (returnObjects for arrays)
   const slideData = t("dive.slides", { returnObjects: true }) as Array<{
+    label: string;
     title: string;
+    highlight: string;
+    subtitle: string;
     description: string;
   }>;
 
@@ -54,8 +58,8 @@ const DiveExpertSection = () => {
     return () => clearInterval(interval);
   }, [nextSlide]);
 
-  // title may include line breaks (\n) in translations
-  const title = t("dive.title");
+  // get current slide data
+  const currentSlideData = slides[currentSlide];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -71,24 +75,22 @@ const DiveExpertSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="flex items-center justify-center mb-6">
+        <div className="flex items-center justify-center mb-2 md:mb-6">
           <Waves className="w-6 h-6 mr-3 text-ocean-aqua" />
-          <span className="text-ocean-aqua font-medium text-lg">{t("dive.label")}</span>
+          <span className="text-ocean-aqua font-medium text-lg">{currentSlideData?.label}</span>
         </div>
 
-        <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          {title.split("\n").map((line, i) => (
-            <span key={i}>
+        <h2 className="text-4xl md:text-6xl font-bold mb-2 md:mb-6 leading-tight">
+          {currentSlideData?.title.split("\n").map((line, i) => (
+            <p key={i}>
               {line}
-              {i < title.split("\n").length - 1 && <br />}
-            </span>
+              {i < currentSlideData.title.split("\n").length - 1 && <br />}
+            </p>
           ))}
-          <span className="text-ocean-aqua block md:inline">{t("dive.highlight")}</span>
+        <p className="text-4xl md:text-6xl font-bold mt-2 md:mt-4 leading-tight text-ocean-aqua">{currentSlideData?.highlight}</p>
         </h2>
 
-        <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto px-4 md:px-32 leading-relaxed">
-          {slides[currentSlide].description}
-        </p>
+        <p className="text-base md:text-2xl mb-2 md:mb-8 max-w-4xl mx-auto px-4 md:px-32 leading-relaxed">{currentSlideData?.description}</p>
       </div>
 
       {/* Animated Progress Bar */}

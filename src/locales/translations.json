@@ -21,13 +21,11 @@
         ]
       },
       "dive": {
-        "label": "Dive Experts",
-        "title": "Not Just Depth\n",
-        "highlight": "A Rediscovery of the Ocean's Pulse",
         "slides": [
-          { "title": "Amazing Underwater Views", "description": "Discover the breathtaking beauty beneath the surface" },
-          { "title": "Vibrant Marine Life", "description": "Encounter diverse species in their natural habitat" },
-          { "title": "Shared Adventures", "description": "Create unforgettable memories together" }
+          { "label": "Dive Experts", "title": "Diving at Sipadan Island", "highlight": " --3 dives per day--", "subtitle": "Amazing Underwater Views","description": "Terms & Condition Apply" },
+          { "label": "Dive Experts", "title": "Not Just Depth", "highlight": "A Rediscovery of the Ocean's Pulse", "subtitle": "Vibrant Marine Life", "description": "Encounter diverse species in Semporna" },
+          { "label": "Dive Experts", "title": "Diving at Sipadan Island", "highlight": " --3 dives per day--", "subtitle": "Shared Adventures", "description": "Terms & Condition Apply" },
+          { "label": "Dive Experts", "title": "Not Just Depth", "highlight": "A Rediscovery of the Ocean's Pulse", "subtitle": "Barracuda Tornado", "description": "Experience the wonders of Semporna" }        
         ]
       },
       "holidays": {
@@ -307,13 +305,11 @@
         ]
       },
       "dive": {
-        "label": "潜水专家",
-        "title": "不仅仅是深度\n",
-        "highlight": "重新发现海洋的脉动",
         "slides": [
-          { "title": "惊人的水下景观", "description": "探索水面下令人屏息的美景" },
-          { "title": "充满活力的海洋生物", "description": "在自然栖息地遇见多样的物种" },
-          { "title": "共享冒险", "description": "一起创造难忘的回忆" }
+          { "label": "潜水专家", "title": "在诗巴丹岛潜水", "highlight": " --每天3次潜水--", "subtitle": "惊人的水下景观","description": "条款和条件适用" },
+          { "label": "潜水专家", "title": "不仅仅是深度", "highlight": "重新发现海洋的脉动", "subtitle": "充满活力的海洋生物", "description": "在仙本那遇见多样物种" },
+          { "label": "潜水专家", "title": "在诗巴丹岛潜水", "highlight": " --每天3次潜水--", "subtitle": "共享冒险", "description": "条款和条件适用" },
+          { "label": "潜水专家", "title": "不仅仅是深度", "highlight": "重新发现海洋的脉动", "subtitle": "梭鱼龙卷风", "description": "体验仙本那的奇迹" }        
         ]
       },
       "holidays": {
@@ -356,16 +352,16 @@
           "gallery_button": "下一页",
           "items": [{ "title": "烧烤之夜" }, { "title": "自助餐" }, { "title": "家庭晚餐" }, { "title": "卡帕莱主厨" }, { "title": "服务员" }],
           "gallery": [
-            { "alt": "新加坡辣椒蟹", "title": "新加坡辣椒蟹"},
-            { "alt": "青柠蛋黄酱炸虾", "title": "青柠蛋黄酱炸虾"},
-            { "alt": "奶酪烤花椰菜", "title": "奶酪烤花椰菜"},
-            { "alt": "天妇罗蔬菜",  "title": "天妇罗蔬菜"},
-            { "alt": "中式清蒸鱼片", "title": "中式清蒸鱼片"},
+            { "alt": "新加坡辣椒蟹", "title": "新加坡辣椒蟹" },
+            { "alt": "青柠蛋黄酱炸虾", "title": "青柠蛋黄酱炸虾" },
+            { "alt": "奶酪烤花椰菜", "title": "奶酪烤花椰菜" },
+            { "alt": "天妇罗蔬菜", "title": "天妇罗蔬菜" },
+            { "alt": "中式清蒸鱼片", "title": "中式清蒸鱼片" },
             { "alt": "烤鸭", "title": "烤鸭" },
-            { "alt": "照烧鸡", "title": "照烧鸡"},
-            { "alt": "蒜香海鲜意面", "title": "蒜香海鲜意面"},
-            { "alt": "烤本地金枪鱼", "title": "烤本地金枪鱼"},
-            { "alt": "慢烤四分之一羊肩", "title": "慢烤四分之一羊肩"}
+            { "alt": "照烧鸡", "title": "照烧鸡" },
+            { "alt": "蒜香海鲜意面", "title": "蒜香海鲜意面" },
+            { "alt": "烤本地金枪鱼", "title": "烤本地金枪鱼" },
+            { "alt": "慢烤四分之一羊肩", "title": "慢烤四分之一羊肩" }
           ]
         }
       },
