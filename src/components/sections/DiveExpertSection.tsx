@@ -68,15 +68,19 @@ const DiveExpertSection = () => {
       const video = videoRef.current;
       video.pause();
       video.currentTime = 0;
+      // Ensure video is unmuted so its own audio plays
+      video.muted = false;
       const playPromise = video.play();
       if (playPromise && typeof playPromise.then === "function") {
         playPromise.catch(() => {
-          // Autoplay may be blocked; mute is set to allow autoplay in most browsers.
+          // Autoplay may be blocked
+          console.warn("Video autoplay was blocked");
         });
       }
     }
   }, [currentSlide]);
 
+  // Only show timer for images, videos advance when onEnded fires
   useEffect(() => {
     let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
@@ -124,6 +128,7 @@ const DiveExpertSection = () => {
                 className="w-full h-full object-cover"
                 playsInline
                 autoPlay
+                muted={false}
                 onEnded={goToNextSlide}
                 controls={false}
               />
