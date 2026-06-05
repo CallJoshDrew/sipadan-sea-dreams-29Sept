@@ -301,6 +301,9 @@ ${t("contact.email_footer")} ${new Date().toLocaleString()}
             {/* Special Requirements */}
             <div className="space-y-2">
               <Label htmlFor="specialRequirements">{t("contact.form_special_requirements")}</Label>
+              <p className="text-xs font-semibold">Please Take Note:</p>
+              <p className="text-xs text-amber-600 font-semibold">{t("contact.arrival")}</p>
+              <p className="text-xs text-amber-600 font-semibold">{t("contact.departure")}</p>
               <Textarea id="specialRequirements" name="specialRequirements" value={formData.specialRequirements} onChange={handleChange} placeholder={t("contact.placeholder_requirements")} rows={3} />
             </div>
 
