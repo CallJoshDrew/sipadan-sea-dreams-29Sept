@@ -129,6 +129,36 @@
         "booking_button": "Enquiry",
         "items": [
           {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "We had another wonderful experience at Kapalai Dive Resort. Our dive masters Ryan and Ardi were extremely friendly, knowledgeable, and excellent at spotting marine life. They were just as skilled at finding larger sea life as they were at discovering tiny macro creatures, which made every dive interesting. 1/5",
+            "rating": 5
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "We saw a giant cuttlefish, a sleeping bamboo shark, and mimic octopi, amongst many other sea creatures! We had fantastic diving at Kapalai, Mabul, and the famous Sipadan Island, and really appreciated how attentive and experienced the dive team was. 2/5",
+            "rating": 5
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "The rest of the resort staff were also very friendly, welcoming, and helpful throughout our stay.The food was delicious and overall we felt the resort offered excellent value for such a unique experience. One of the most fascinating things about Kapalai is the island itself. The tides completely change the scenery throughout the day. 3/5",
+            "rating": 5 
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "At high tide, the water can cover much of the island and you can have beautiful clear water directly underneath your chalet. At low tide, the water recedes, there may be little or no water beneath the chalet, and the exposed sand makes the island appear much larger. It was really interesting to watch the landscape transform with the tides. 4/5",
+            "rating": 5
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "Kapalai is a very special place and a fantastic choice for anyone who loves diving, marine life, and staying somewhere completely different from a typical resort. It's definitely worth the travel from Tawau airport. We would definitely recommend it!` 5/`5",
+            "rating": 5
+          },
+          {
             "name": "Michael M",
             "platform": "TripAdvisor",
             "review": "This is our second visit and we love everything about the resort. Staff is great, rooms are really nice and the tub is great for warming up after a dive. The dive center is top notch with great guides (good evening karaoke too!) Food is fine, but could improve.",
@@ -414,6 +444,36 @@
         "booking_description": "发现位于沙巴州山打根仙本那的诗巴丹卡帕莱潜水度假村——一个位于清澈海水之上的传奇目的地，提供世界一流的潜水和三十年的标志性热情好客。立即预订您难忘的岛屿逃亡之旅！",
         "booking_button": "查询",
         "items": [
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "我们在卡帕莱潜水度假村又有了一次美妙的体验。我们的潜水教练Ryan和Ardi非常友善、知识渊博，在发现海洋生物方面表现出色。他们发现大型海洋生物的技能和发现微小生物的技能一样出色，这使每次潜水都很有趣。1/5",
+            "rating": 5
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "我们看到了一只巨大的墨鱼、一条睡着的竹鲨和拟态章鱼，以及许多其他海洋生物！我们在卡帕莱、玛布尔和著名的诗巴丹岛进行了出色的潜水，真的很感激潜水队的专业和经验。2/5",
+            "rating": 5
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "度假村的其他工作人员在我们逗留期间也非常友好、热情和乐于助人。食物很美味，总的来说我们认为度假村为这种独特的体验提供了极好的价值。关于卡帕莱最迷人的一件事是岛屿本身。潮汐完全改变了整天的景色。3/5",
+            "rating": 5 
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "在涨潮时，水可以覆盖岛屿的大部分，您可以在小屋正下方看到清澈的水。在退潮时，水退去，小屋下方可能几乎没有水或没有水，暴露的沙滩使岛屿显得更大。观看景观随潮汐而变化真的很有趣。4/5",
+            "rating": 5
+          },
+          {
+            "name": "Shauna Wong",
+            "platform": "Google Review",
+            "review": "卡帕莱是一个非常特别的地方，对于任何热爱潜水、海洋生物和想要住在与典型度假村完全不同地方的人来说，这是一个很好的选择。从斗湖机场来这里绝对值得。我们会强烈推荐！5/5",
+            "rating": 5
+          },
           {
             "name": "Michael M",
             "platform": "TripAdvisor",
