@@ -27,7 +27,7 @@ const ReviewsSection = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">{t("reviews.subtitle")}</p>
         </div>
 
-        <AutoCarousel autoPlayInterval={3000} showDots={false}>
+        <AutoCarousel autoPlayInterval={20000} showDots={false}>
           {reviewsData.map((review, index) => (
             <div key={index} className="px-4">
               <div className="bg-white rounded-2xl p-6 elegant-shadow smooth-transition hover:scale-105 hover:glow-effect max-w-2xl mx-auto">
